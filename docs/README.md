@@ -1,0 +1,380 @@
+# Kaiming He 最新研究论文
+
+> 最后更新: 2025-11-20 02:35:34 
+> 
+> 此文档自动抓取自 arXiv，展示 Kaiming He 教授的最新研究论文
+> 
+> 个人主页: [https://people.csail.mit.edu/kaiming/](https://people.csail.mit.edu/kaiming/)
+
+## 📊 论文统计
+- **总论文数**: 18
+- **最新更新**: 2025-11-18
+
+## 📝 论文列表
+
+
+### 1. ARC Is a Vision Problem!
+
+**作者**: Keya Hu, Ali Cy, Linlu Qiu, Xiaoman Delores Ding, Runqian Wang, Yeyin Eva Zhu, Jacob Andreas, Kaiming He  
+**所属机构**: MIT CSAIL  
+**提交日期**: 2025-11-18  
+**主要分类**: cs.CV  
+
+<details>
+<summary>📄 摘要 (点击展开)</summary>
+
+The Abstraction and Reasoning Corpus (ARC) is designed to promote research on abstract reasoning, a fundamental aspect of human intelligence. Common approaches to ARC treat it as a language-oriented problem, addressed by large language models (LLMs) or recurrent reasoning models. However, although the puzzle-like tasks in ARC are inherently visual, existing research has rarely approached the problem from a vision-centric perspective. In this work, we formulate ARC within a vision paradigm, framing it as an image-to-image translation problem. To incorporate visual priors, we represent the inputs on a "canvas" that can be processed like natural images. It is then natural for us to apply standard vision architectures, such as a vanilla Vision Transformer (ViT), to perform image-to-image mapping. Our model is trained from scratch solely on ARC data and generalizes to unseen tasks through test-time training. Our framework, termed Vision ARC (VARC), achieves 60.4% accuracy on the ARC-1 benchmark, substantially outperforming existing methods that are also trained from scratch. Our results are competitive with those of leading LLMs and close the gap to average human performance.
+
+</details>
+
+**资源**: 
+- [📄 PDF下载](https://arxiv.org/pdf/2511.14761v1) 
+- [🔗 arXiv页面](https://arxiv.org/abs/2511.14761v1)
+
+---
+
+### 2. Back to Basics: Let Denoising Generative Models Denoise
+
+**作者**: Tianhong Li, Kaiming He  
+**所属机构**: MIT CSAIL  
+**提交日期**: 2025-11-17  
+**主要分类**: cs.CV  
+
+<details>
+<summary>📄 摘要 (点击展开)</summary>
+
+Today's denoising diffusion models do not "denoise" in the classical sense, i.e., they do not directly predict clean images. Rather, the neural networks predict noise or a noised quantity. In this paper, we suggest that predicting clean data and predicting noised quantities are fundamentally different. According to the manifold assumption, natural data should lie on a low-dimensional manifold, whereas noised quantities do not. With this assumption, we advocate for models that directly predict clean data, which allows apparently under-capacity networks to operate effectively in very high-dimensional spaces. We show that simple, large-patch Transformers on pixels can be strong generative models: using no tokenizer, no pre-training, and no extra loss. Our approach is conceptually nothing more than "$\textbf{Just image Transformers}$", or $\textbf{JiT}$, as we call it. We report competitive results using JiT with large patch sizes of 16 and 32 on ImageNet at resolutions of 256 and 512, where predicting high-dimensional noised quantities can fail catastrophically. With our networks mapping back to the basics of the manifold, our research goes back to basics and pursues a self-contained paradigm for Transformer-based diffusion on raw natural data.
+
+</details>
+
+**资源**: 
+- [📄 PDF下载](https://arxiv.org/pdf/2511.13720v1) 
+- [🔗 arXiv页面](https://arxiv.org/abs/2511.13720v1)
+
+---
+
+### 3. Diffuse and Disperse: Image Generation with Representation Regularization
+
+**作者**: Runqian Wang, Kaiming He  
+**所属机构**: MIT CSAIL  
+**提交日期**: 2025-06-10  
+**主要分类**: cs.CV  
+
+<details>
+<summary>📄 摘要 (点击展开)</summary>
+
+The development of diffusion-based generative models over the past decade has largely proceeded independently of progress in representation learning. These diffusion models typically rely on regression-based objectives and generally lack explicit regularization. In this work, we propose \textit{Dispersive Loss}, a simple plug-and-play regularizer that effectively improves diffusion-based generative models. Our loss function encourages internal representations to disperse in the hidden space, analogous to contrastive self-supervised learning, with the key distinction that it requires no positive sample pairs and therefore does not interfere with the sampling process used for regression. Compared to the recent method of representation alignment (REPA), our approach is self-contained and minimalist, requiring no pre-training, no additional parameters, and no external data. We evaluate Dispersive Loss on the ImageNet dataset across a range of models and report consistent improvements over widely used and strong baselines. We hope our work will help bridge the gap between generative modeling and representation learning.
+
+</details>
+
+**资源**: 
+- [📄 PDF下载](https://arxiv.org/pdf/2506.09027v2) 
+- [🔗 arXiv页面](https://arxiv.org/abs/2506.09027v2)
+
+---
+
+### 4. Mean Flows for One-step Generative Modeling
+
+**作者**: Zhengyang Geng, Mingyang Deng, Xingjian Bai, J. Zico Kolter, Kaiming He  
+**所属机构**: MIT CSAIL  
+**提交日期**: 2025-05-19  
+**主要分类**: cs.LG  
+
+<details>
+<summary>📄 摘要 (点击展开)</summary>
+
+We propose a principled and effective framework for one-step generative modeling. We introduce the notion of average velocity to characterize flow fields, in contrast to instantaneous velocity modeled by Flow Matching methods. A well-defined identity between average and instantaneous velocities is derived and used to guide neural network training. Our method, termed the MeanFlow model, is self-contained and requires no pre-training, distillation, or curriculum learning. MeanFlow demonstrates strong empirical performance: it achieves an FID of 3.43 with a single function evaluation (1-NFE) on ImageNet 256x256 trained from scratch, significantly outperforming previous state-of-the-art one-step diffusion/flow models. Our study substantially narrows the gap between one-step diffusion/flow models and their multi-step predecessors, and we hope it will motivate future research to revisit the foundations of these powerful models.
+
+</details>
+
+**资源**: 
+- [📄 PDF下载](https://arxiv.org/pdf/2505.13447v1) 
+- [🔗 arXiv页面](https://arxiv.org/abs/2505.13447v1)
+
+---
+
+### 5. Transformers without Normalization
+
+**作者**: Jiachen Zhu, Xinlei Chen, Kaiming He, Yann LeCun, Zhuang Liu  
+**所属机构**: MIT CSAIL  
+**提交日期**: 2025-03-13  
+**主要分类**: cs.LG  
+
+<details>
+<summary>📄 摘要 (点击展开)</summary>
+
+Normalization layers are ubiquitous in modern neural networks and have long been considered essential. This work demonstrates that Transformers without normalization can achieve the same or better performance using a remarkably simple technique. We introduce Dynamic Tanh (DyT), an element-wise operation $DyT($x$) = \tanh(α$x$)$, as a drop-in replacement for normalization layers in Transformers. DyT is inspired by the observation that layer normalization in Transformers often produces tanh-like, $S$-shaped input-output mappings. By incorporating DyT, Transformers without normalization can match or exceed the performance of their normalized counterparts, mostly without hyperparameter tuning. We validate the effectiveness of Transformers with DyT across diverse settings, ranging from recognition to generation, supervised to self-supervised learning, and computer vision to language models. These findings challenge the conventional understanding that normalization layers are indispensable in modern neural networks, and offer new insights into their role in deep networks.
+
+</details>
+
+**资源**: 
+- [📄 PDF下载](https://arxiv.org/pdf/2503.10622v2) 
+- [🔗 arXiv页面](https://arxiv.org/abs/2503.10622v2)
+
+---
+
+### 6. Denoising Hamiltonian Network for Physical Reasoning
+
+**作者**: Congyue Deng, Brandon Y. Feng, Cecilia Garraffo, Alan Garbarz, Robin Walters, William T. Freeman, Leonidas Guibas, Kaiming He  
+**所属机构**: MIT CSAIL  
+**提交日期**: 2025-03-10  
+**主要分类**: cs.LG  
+
+<details>
+<summary>📄 摘要 (点击展开)</summary>
+
+Machine learning frameworks for physical problems must capture and enforce physical constraints that preserve the structure of dynamical systems. Many existing approaches achieve this by integrating physical operators into neural networks. While these methods offer theoretical guarantees, they face two key limitations: (i) they primarily model local relations between adjacent time steps, overlooking longer-range or higher-level physical interactions, and (ii) they focus on forward simulation while neglecting broader physical reasoning tasks. We propose the Denoising Hamiltonian Network (DHN), a novel framework that generalizes Hamiltonian mechanics operators into more flexible neural operators. DHN captures non-local temporal relationships and mitigates numerical integration errors through a denoising mechanism. DHN also supports multi-system modeling with a global conditioning mechanism. We demonstrate its effectiveness and flexibility across three diverse physical reasoning tasks with distinct inputs and outputs.
+
+</details>
+
+**资源**: 
+- [📄 PDF下载](https://arxiv.org/pdf/2503.07596v1) 
+- [🔗 arXiv页面](https://arxiv.org/abs/2503.07596v1)
+
+---
+
+### 7. Fractal Generative Models
+
+**作者**: Tianhong Li, Qinyi Sun, Lijie Fan, Kaiming He  
+**所属机构**: MIT CSAIL  
+**提交日期**: 2025-02-24  
+**主要分类**: cs.LG  
+
+<details>
+<summary>📄 摘要 (点击展开)</summary>
+
+Modularization is a cornerstone of computer science, abstracting complex functions into atomic building blocks. In this paper, we introduce a new level of modularization by abstracting generative models into atomic generative modules. Analogous to fractals in mathematics, our method constructs a new type of generative model by recursively invoking atomic generative modules, resulting in self-similar fractal architectures that we call fractal generative models. As a running example, we instantiate our fractal framework using autoregressive models as the atomic generative modules and examine it on the challenging task of pixel-by-pixel image generation, demonstrating strong performance in both likelihood estimation and generation quality. We hope this work could open a new paradigm in generative modeling and provide a fertile ground for future research. Code is available at https://github.com/LTH14/fractalgen.
+
+</details>
+
+**资源**: 
+- [📄 PDF下载](https://arxiv.org/pdf/2502.17437v2) 
+- [🔗 arXiv页面](https://arxiv.org/abs/2502.17437v2)
+
+---
+
+### 8. Is Noise Conditioning Necessary for Denoising Generative Models?
+
+**作者**: Qiao Sun, Zhicheng Jiang, Hanhong Zhao, Kaiming He  
+**所属机构**: MIT CSAIL  
+**提交日期**: 2025-02-18  
+**主要分类**: cs.CV  
+
+<details>
+<summary>📄 摘要 (点击展开)</summary>
+
+It is widely believed that noise conditioning is indispensable for denoising diffusion models to work successfully. This work challenges this belief. Motivated by research on blind image denoising, we investigate a variety of denoising-based generative models in the absence of noise conditioning. To our surprise, most models exhibit graceful degradation, and in some cases, they even perform better without noise conditioning. We provide a theoretical analysis of the error caused by removing noise conditioning and demonstrate that our analysis aligns with empirical observations. We further introduce a noise-unconditional model that achieves a competitive FID of 2.23 on CIFAR-10, significantly narrowing the gap to leading noise-conditional models. We hope our findings will inspire the community to revisit the foundations and formulations of denoising generative models.
+
+</details>
+
+**资源**: 
+- [📄 PDF下载](https://arxiv.org/pdf/2502.13129v2) 
+- [🔗 arXiv页面](https://arxiv.org/abs/2502.13129v2)
+
+---
+
+### 9. Fluid: Scaling Autoregressive Text-to-image Generative Models with Continuous Tokens
+
+**作者**: Lijie Fan, Tianhong Li, Siyang Qin, Yuanzhen Li, Chen Sun, Michael Rubinstein, Deqing Sun, Kaiming He, Yonglong Tian  
+**所属机构**: MIT CSAIL  
+**提交日期**: 2024-10-17  
+**主要分类**: cs.CV  
+
+<details>
+<summary>📄 摘要 (点击展开)</summary>
+
+Scaling up autoregressive models in vision has not proven as beneficial as in large language models. In this work, we investigate this scaling problem in the context of text-to-image generation, focusing on two critical factors: whether models use discrete or continuous tokens, and whether tokens are generated in a random or fixed raster order using BERT- or GPT-like transformer architectures. Our empirical results show that, while all models scale effectively in terms of validation loss, their evaluation performance -- measured by FID, GenEval score, and visual quality -- follows different trends. Models based on continuous tokens achieve significantly better visual quality than those using discrete tokens. Furthermore, the generation order and attention mechanisms significantly affect the GenEval score: random-order models achieve notably better GenEval scores compared to raster-order models. Inspired by these findings, we train Fluid, a random-order autoregressive model on continuous tokens. Fluid 10.5B model achieves a new state-of-the-art zero-shot FID of 6.16 on MS-COCO 30K, and 0.69 overall score on the GenEval benchmark. We hope our findings and results will encourage future efforts to further bridge the scaling gap between vision and language models.
+
+</details>
+
+**资源**: 
+- [📄 PDF下载](https://arxiv.org/pdf/2410.13863v1) 
+- [🔗 arXiv页面](https://arxiv.org/abs/2410.13863v1)
+
+---
+
+### 10. Scaling Proprioceptive-Visual Learning with Heterogeneous Pre-trained Transformers
+
+**作者**: Lirui Wang, Xinlei Chen, Jialiang Zhao, Kaiming He  
+**所属机构**: MIT CSAIL  
+**提交日期**: 2024-09-30  
+**主要分类**: cs.RO  
+
+<details>
+<summary>📄 摘要 (点击展开)</summary>
+
+One of the roadblocks for training generalist robotic models today is heterogeneity. Previous robot learning methods often collect data to train with one specific embodiment for one task, which is expensive and prone to overfitting. This work studies the problem of learning policy representations through heterogeneous pre-training on robot data across different embodiments and tasks at scale. We propose Heterogeneous Pre-trained Transformers (HPT), which pre-train a large, shareable trunk of a policy neural network to learn a task and embodiment agnostic shared representation. This general architecture aligns the specific proprioception and vision inputs from distinct embodiments to a short sequence of tokens and then processes such tokens to map to control robots for different tasks. Leveraging the recent large-scale multi-embodiment real-world robotic datasets as well as simulation, deployed robots, and human video datasets, we investigate pre-training policies across heterogeneity. We conduct experiments to investigate the scaling behaviors of training objectives, to the extent of 52 datasets. HPTs outperform several baselines and enhance the fine-tuned policy performance by over 20% on unseen tasks in multiple simulator benchmarks and real-world settings. See the project website (https://liruiw.github.io/hpt/) for code and videos.
+
+</details>
+
+**资源**: 
+- [📄 PDF下载](https://arxiv.org/pdf/2409.20537v1) 
+- [🔗 arXiv页面](https://arxiv.org/abs/2409.20537v1)
+
+---
+
+### 11. Autoregressive Image Generation without Vector Quantization
+
+**作者**: Tianhong Li, Yonglong Tian, He Li, Mingyang Deng, Kaiming He  
+**所属机构**: MIT CSAIL  
+**提交日期**: 2024-06-17  
+**主要分类**: cs.CV  
+
+<details>
+<summary>📄 摘要 (点击展开)</summary>
+
+Conventional wisdom holds that autoregressive models for image generation are typically accompanied by vector-quantized tokens. We observe that while a discrete-valued space can facilitate representing a categorical distribution, it is not a necessity for autoregressive modeling. In this work, we propose to model the per-token probability distribution using a diffusion procedure, which allows us to apply autoregressive models in a continuous-valued space. Rather than using categorical cross-entropy loss, we define a Diffusion Loss function to model the per-token probability. This approach eliminates the need for discrete-valued tokenizers. We evaluate its effectiveness across a wide range of cases, including standard autoregressive models and generalized masked autoregressive (MAR) variants. By removing vector quantization, our image generator achieves strong results while enjoying the speed advantage of sequence modeling. We hope this work will motivate the use of autoregressive generation in other continuous-valued domains and applications. Code is available at: https://github.com/LTH14/mar.
+
+</details>
+
+**资源**: 
+- [📄 PDF下载](https://arxiv.org/pdf/2406.11838v3) 
+- [🔗 arXiv页面](https://arxiv.org/abs/2406.11838v3)
+
+---
+
+### 12. Physically Compatible 3D Object Modeling from a Single Image
+
+**作者**: Minghao Guo, Bohan Wang, Pingchuan Ma, Tianyuan Zhang, Crystal Elaine Owens, Chuang Gan, Joshua B. Tenenbaum, Kaiming He, Wojciech Matusik  
+**所属机构**: MIT CSAIL  
+**提交日期**: 2024-05-30  
+**主要分类**: cs.CV  
+
+<details>
+<summary>📄 摘要 (点击展开)</summary>
+
+We present a computational framework that transforms single images into 3D physical objects. The visual geometry of a physical object in an image is determined by three orthogonal attributes: mechanical properties, external forces, and rest-shape geometry. Existing single-view 3D reconstruction methods often overlook this underlying composition, presuming rigidity or neglecting external forces. Consequently, the reconstructed objects fail to withstand real-world physical forces, resulting in instability or undesirable deformation -- diverging from their intended designs as depicted in the image. Our optimization framework addresses this by embedding physical compatibility into the reconstruction process. We explicitly decompose the three physical attributes and link them through static equilibrium, which serves as a hard constraint, ensuring that the optimized physical shapes exhibit desired physical behaviors. Evaluations on a dataset collected from Objaverse demonstrate that our framework consistently enhances the physical realism of 3D models over existing methods. The utility of our framework extends to practical applications in dynamic simulations and 3D printing, where adherence to physical compatibility is paramount.
+
+</details>
+
+**资源**: 
+- [📄 PDF下载](https://arxiv.org/pdf/2405.20510v3) 
+- [🔗 arXiv页面](https://arxiv.org/abs/2405.20510v3)
+
+---
+
+### 13. TetSphere Splatting: Representing High-Quality Geometry with Lagrangian Volumetric Meshes
+
+**作者**: Minghao Guo, Bohan Wang, Kaiming He, Wojciech Matusik  
+**所属机构**: MIT CSAIL  
+**提交日期**: 2024-05-30  
+**主要分类**: cs.CV  
+
+<details>
+<summary>📄 摘要 (点击展开)</summary>
+
+We introduce TetSphere Splatting, a Lagrangian geometry representation designed for high-quality 3D shape modeling. TetSphere splatting leverages an underused yet powerful geometric primitive -- volumetric tetrahedral meshes. It represents 3D shapes by deforming a collection of tetrahedral spheres, with geometric regularizations and constraints that effectively resolve common mesh issues such as irregular triangles, non-manifoldness, and floating artifacts. Experimental results on multi-view and single-view reconstruction highlight TetSphere splatting's superior mesh quality while maintaining competitive reconstruction accuracy compared to state-of-the-art methods. Additionally, TetSphere splatting demonstrates versatility by seamlessly integrating into generative modeling tasks, such as image-to-3D and text-to-3D generation.
+
+</details>
+
+**资源**: 
+- [📄 PDF下载](https://arxiv.org/pdf/2405.20283v4) 
+- [🔗 arXiv页面](https://arxiv.org/abs/2405.20283v4)
+
+---
+
+### 14. Dynamic Inhomogeneous Quantum Resource Scheduling with Reinforcement Learning
+
+**作者**: Linsen Li, Pratyush Anand, Kaiming He, Dirk Englund  
+**所属机构**: MIT CSAIL  
+**提交日期**: 2024-05-25  
+**主要分类**: cs.LG  
+
+<details>
+<summary>📄 摘要 (点击展开)</summary>
+
+A central challenge in quantum information science and technology is achieving real-time estimation and feedforward control of quantum systems. This challenge is compounded by the inherent inhomogeneity of quantum resources, such as qubit properties and controls, and their intrinsically probabilistic nature. This leads to stochastic challenges in error detection and probabilistic outcomes in processes such as heralded remote entanglement. Given these complexities, optimizing the construction of quantum resource states is an NP-hard problem. In this paper, we address the quantum resource scheduling issue by formulating the problem and simulating it within a digitized environment, allowing the exploration and development of agent-based optimization strategies. We employ reinforcement learning agents within this probabilistic setting and introduce a new framework utilizing a Transformer model that emphasizes self-attention mechanisms for pairs of qubits. This approach facilitates dynamic scheduling by providing real-time, next-step guidance. Our method significantly improves the performance of quantum systems, achieving more than a 3$\times$ improvement over rule-based agents, and establishes an innovative framework that improves the joint design of physical and control systems for quantum applications in communication, networking, and computing.
+
+</details>
+
+**资源**: 
+- [📄 PDF下载](https://arxiv.org/pdf/2405.16380v1) 
+- [🔗 arXiv页面](https://arxiv.org/abs/2405.16380v1)
+
+---
+
+### 15. A Decade's Battle on Dataset Bias: Are We There Yet?
+
+**作者**: Zhuang Liu, Kaiming He  
+**所属机构**: MIT CSAIL  
+**提交日期**: 2024-03-13  
+**主要分类**: cs.CV  
+
+<details>
+<summary>📄 摘要 (点击展开)</summary>
+
+We revisit the "dataset classification" experiment suggested by Torralba & Efros (2011) a decade ago, in the new era with large-scale, diverse, and hopefully less biased datasets as well as more capable neural network architectures. Surprisingly, we observe that modern neural networks can achieve excellent accuracy in classifying which dataset an image is from: e.g., we report 84.7% accuracy on held-out validation data for the three-way classification problem consisting of the YFCC, CC, and DataComp datasets. Our further experiments show that such a dataset classifier could learn semantic features that are generalizable and transferable, which cannot be explained by memorization. We hope our discovery will inspire the community to rethink issues involving dataset bias.
+
+</details>
+
+**资源**: 
+- [📄 PDF下载](https://arxiv.org/pdf/2403.08632v2) 
+- [🔗 arXiv页面](https://arxiv.org/abs/2403.08632v2)
+
+---
+
+### 16. Deconstructing Denoising Diffusion Models for Self-Supervised Learning
+
+**作者**: Xinlei Chen, Zhuang Liu, Saining Xie, Kaiming He  
+**所属机构**: MIT CSAIL  
+**提交日期**: 2024-01-25  
+**主要分类**: cs.CV  
+
+<details>
+<summary>📄 摘要 (点击展开)</summary>
+
+In this study, we examine the representation learning abilities of Denoising Diffusion Models (DDM) that were originally purposed for image generation. Our philosophy is to deconstruct a DDM, gradually transforming it into a classical Denoising Autoencoder (DAE). This deconstructive procedure allows us to explore how various components of modern DDMs influence self-supervised representation learning. We observe that only a very few modern components are critical for learning good representations, while many others are nonessential. Our study ultimately arrives at an approach that is highly simplified and to a large extent resembles a classical DAE. We hope our study will rekindle interest in a family of classical methods within the realm of modern self-supervised learning.
+
+</details>
+
+**资源**: 
+- [📄 PDF下载](https://arxiv.org/pdf/2401.14404v1) 
+- [🔗 arXiv页面](https://arxiv.org/abs/2401.14404v1)
+
+---
+
+### 17. Return of Unconditional Generation: A Self-supervised Representation Generation Method
+
+**作者**: Tianhong Li, Dina Katabi, Kaiming He  
+**所属机构**: MIT CSAIL  
+**提交日期**: 2023-12-06  
+**主要分类**: cs.CV  
+
+<details>
+<summary>📄 摘要 (点击展开)</summary>
+
+Unconditional generation -- the problem of modeling data distribution without relying on human-annotated labels -- is a long-standing and fundamental challenge in generative models, creating a potential of learning from large-scale unlabeled data. In the literature, the generation quality of an unconditional method has been much worse than that of its conditional counterpart. This gap can be attributed to the lack of semantic information provided by labels. In this work, we show that one can close this gap by generating semantic representations in the representation space produced by a self-supervised encoder. These representations can be used to condition the image generator. This framework, called Representation-Conditioned Generation (RCG), provides an effective solution to the unconditional generation problem without using labels. Through comprehensive experiments, we observe that RCG significantly improves unconditional generation quality: e.g., it achieves a new state-of-the-art FID of 2.15 on ImageNet 256x256, largely reducing the previous best of 5.91 by a relative 64%. Our unconditional results are situated in the same tier as the leading class-conditional ones. We hope these encouraging observations will attract the community's attention to the fundamental problem of unconditional generation. Code is available at https://github.com/LTH14/rcg.
+
+</details>
+
+**资源**: 
+- [📄 PDF下载](https://arxiv.org/pdf/2312.03701v4) 
+- [🔗 arXiv页面](https://arxiv.org/abs/2312.03701v4)
+
+---
+
+### 18. Scaling Language-Image Pre-training via Masking
+
+**作者**: Yanghao Li, Haoqi Fan, Ronghang Hu, Christoph Feichtenhofer, Kaiming He  
+**所属机构**: MIT CSAIL  
+**提交日期**: 2022-12-01  
+**主要分类**: cs.CV  
+
+<details>
+<summary>📄 摘要 (点击展开)</summary>
+
+We present Fast Language-Image Pre-training (FLIP), a simple and more efficient method for training CLIP. Our method randomly masks out and removes a large portion of image patches during training. Masking allows us to learn from more image-text pairs given the same wall-clock time and contrast more samples per iteration with similar memory footprint. It leads to a favorable trade-off between accuracy and training time. In our experiments on 400 million image-text pairs, FLIP improves both accuracy and speed over the no-masking baseline. On a large diversity of downstream tasks, FLIP dominantly outperforms the CLIP counterparts trained on the same data. Facilitated by the speedup, we explore the scaling behavior of increasing the model size, data size, or training length, and report encouraging results and comparisons. We hope that our work will foster future research on scaling vision-language learning.
+
+</details>
+
+**资源**: 
+- [📄 PDF下载](https://arxiv.org/pdf/2212.00794v2) 
+- [🔗 arXiv页面](https://arxiv.org/abs/2212.00794v2)
+
+---
+
+## 🔄 自动化说明
+此文档通过 GitHub Actions 自动更新，每日抓取 arXiv 上 Kaiming He 教授的新论文。
+
+## 📄 许可证
+论文版权归原作者所有，此项目仅用于学术研究目的。

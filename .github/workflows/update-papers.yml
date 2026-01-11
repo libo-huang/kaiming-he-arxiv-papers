@@ -1,0 +1,65 @@
+name: Update ArXiv Papers
+
+on:
+  schedule:
+    # 每天 UTC 时间 02:00 (北京时间 10:00) 运行一次
+    # 避免使用 00:00 等整点高峰期，减少排队时间
+    - cron: '0 2 * * *'
+  workflow_dispatch: # 保留手动触发按钮
+
+  # 【关键修改】：彻底删除 `push` 触发器
+  # 删除下面这三行，切断 "Push -> Action -> Push" 的死循环
+  # push:
+  #   branches: [ main ]
+
+jobs:
+  update-papers:
+    runs-on: ubuntu-latest
+    
+    # 增加权限设置，确保有权提交代码
+    permissions:
+      contents: write
+      
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        # 不需要 fetch-depth: 0，默认 1 即可，加快速度
+        token: ${{ secrets.GITHUB_TOKEN }} 
+        
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        # 如果有 requirements.txt 则安装，没有则忽略
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        
+    - name: Run arXiv scraper
+      run: |
+        # 运行你的爬虫脚本
+        # 假设脚本名为 fetch_arxiv_papers.py
+        python scripts/fetch_arxiv_papers.py
+        
+    - name: Commit and push if changed
+      run: |
+        # 配置 Git 用户信息
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        
+        # 将所有变动加入暂存区
+        git add -A
+        
+        # 【核心逻辑】：检测是否有实质性内容变更
+        # --quiet 表示如果不输出任何信息（即没有差异），则退出代码为 0
+        # 如果有差异，退出代码为 1（但在 --quiet 模式下行为略有不同，推荐用下面的写法）
+        
+        # 逻辑：
+        # 1. git diff --staged --quiet：如果暂存区没有变更，返回 0 (true)。
+        # 2. || (逻辑或)：如果前面是 false (即有变更，diff 返回 1)，则执行括号内命令。
+        # 3. 这样保证只有真的有文件变化时，才会执行 commit 和 push。
+        
+        git diff --staged --quiet || (git commit -m "Automated update: ArXiv papers $(date +'%Y-%m-%d')" && git push)
