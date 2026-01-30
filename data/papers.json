@@ -1,6 +1,28 @@
 {
-  "last_updated": "2026-01-29T03:58:47.071649",
+  "last_updated": "2026-01-30T03:58:25.505673",
   "papers": [
+    {
+      "id": "2601.22158v1",
+      "title": "One-step Latent-free Image Generation with Pixel Mean Flows",
+      "authors": [
+        "Yiyang Lu",
+        "Susie Lu",
+        "Qiao Sun",
+        "Hanhong Zhao",
+        "Zhicheng Jiang",
+        "Xianbang Wang",
+        "Tianhong Li",
+        "Zhengyang Geng",
+        "Kaiming He"
+      ],
+      "summary": "Modern diffusion/flow-based models for image generation typically exhibit two core characteristics: (i) using multi-step sampling, and (ii) operating in a latent space. Recent advances have made encouraging progress on each aspect individually, paving the way toward one-step diffusion/flow without latents. In this work, we take a further step towards this goal and propose \"pixel MeanFlow\" (pMF). Our core guideline is to formulate the network output space and the loss space separately. The network target is designed to be on a presumed low-dimensional image manifold (i.e., x-prediction), while the loss is defined via MeanFlow in the velocity space. We introduce a simple transformation between the image manifold and the average velocity field. In experiments, pMF achieves strong results for one-step latent-free generation on ImageNet at 256x256 resolution (2.22 FID) and 512x512 resolution (2.48 FID), filling a key missing piece in this regime. We hope that our study will further advance the boundaries of diffusion/flow-based generative models.",
+      "published": "2026-01-29",
+      "updated": "2026-01-29",
+      "pdf_url": "https://arxiv.org/pdf/2601.22158v1",
+      "primary_category": "cs.CV",
+      "affiliation": "MIT CSAIL",
+      "arxiv_url": "https://arxiv.org/abs/2601.22158v1"
+    },
     {
       "id": "2512.10953v1",
       "title": "Bidirectional Normalizing Flow: From Data to Noise and Back",
@@ -869,22 +891,6 @@
       "primary_category": "cs.CV",
       "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/1711.07971v3"
-    },
-    {
-      "id": "1708.02901v3",
-      "title": "Transitive Invariance for Self-supervised Visual Representation Learning",
-      "authors": [
-        "Xiaolong Wang",
-        "Kaiming He",
-        "Abhinav Gupta"
-      ],
-      "summary": "Learning visual representations with self-supervised learning has become popular in computer vision. The idea is to design auxiliary tasks where labels are free to obtain. Most of these tasks end up providing data to learn specific kinds of invariance useful for recognition. In this paper, we propose to exploit different self-supervised approaches to learn representations invariant to (i) inter-instance variations (two objects in the same class should have similar features) and (ii) intra-instance variations (viewpoint, pose, deformations, illumination, etc). Instead of combining two approaches with multi-task learning, we argue to organize and reason the data with multiple variations. Specifically, we propose to generate a graph with millions of objects mined from hundreds of thousands of videos. The objects are connected by two types of edges which correspond to two types of invariance: \"different instances but a similar viewpoint and category\" and \"different viewpoints of the same instance\". By applying simple transitivity on the graph with these edges, we can obtain pairs of images exhibiting richer visual invariance. We use this data to train a Triplet-Siamese network with VGG16 as the base architecture and apply the learned representations to different recognition tasks. For object detection, we achieve 63.2% mAP on PASCAL VOC 2007 using Fast R-CNN (compare to 67.3% with ImageNet pre-training). For the challenging COCO dataset, our method is surprisingly close (23.5%) to the ImageNet-supervised counterpart (24.4%) using the Faster R-CNN framework. We also show that our network can perform significantly better than the ImageNet network in the surface normal estimation task.",
-      "published": "2017-08-09",
-      "updated": "2017-08-15",
-      "pdf_url": "https://arxiv.org/pdf/1708.02901v3",
-      "primary_category": "cs.CV",
-      "affiliation": "MIT CSAIL",
-      "arxiv_url": "https://arxiv.org/abs/1708.02901v3"
     }
   ]
 }
