@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-05T04:03:15.307651",
+  "last_updated": "2026-02-06T04:04:10.003950",
   "papers": [
     {
       "id": "2602.04770v1",
@@ -20,7 +20,7 @@
       "arxiv_url": "https://arxiv.org/abs/2602.04770v1"
     },
     {
-      "id": "2601.22158v1",
+      "id": "2601.22158v2",
       "title": "One-step Latent-free Image Generation with Pixel Mean Flows",
       "authors": [
         "Yiyang Lu",
@@ -35,11 +35,11 @@
       ],
       "summary": "Modern diffusion/flow-based models for image generation typically exhibit two core characteristics: (i) using multi-step sampling, and (ii) operating in a latent space. Recent advances have made encouraging progress on each aspect individually, paving the way toward one-step diffusion/flow without latents. In this work, we take a further step towards this goal and propose \"pixel MeanFlow\" (pMF). Our core guideline is to formulate the network output space and the loss space separately. The network target is designed to be on a presumed low-dimensional image manifold (i.e., x-prediction), while the loss is defined via MeanFlow in the velocity space. We introduce a simple transformation between the image manifold and the average velocity field. In experiments, pMF achieves strong results for one-step latent-free generation on ImageNet at 256x256 resolution (2.22 FID) and 512x512 resolution (2.48 FID), filling a key missing piece in this regime. We hope that our study will further advance the boundaries of diffusion/flow-based generative models.",
       "published": "2026-01-29",
-      "updated": "2026-01-29",
-      "pdf_url": "https://arxiv.org/pdf/2601.22158v1",
+      "updated": "2026-02-05",
+      "pdf_url": "https://arxiv.org/pdf/2601.22158v2",
       "primary_category": "cs.CV",
       "affiliation": "MIT CSAIL",
-      "arxiv_url": "https://arxiv.org/abs/2601.22158v1"
+      "arxiv_url": "https://arxiv.org/abs/2601.22158v2"
     },
     {
       "id": "2512.10953v1",
