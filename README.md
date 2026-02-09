@@ -1,6 +1,6 @@
 # Kaiming He newest airxiv papers
 
-> Page last update: 2026-02-08 04:24:24 
+> Page last update: 2026-02-09 04:14:11 
 > 
 > The project automatically fetches the latest papers from the arXiv of [Kaiming He](https://people.csail.mit.edu/kaiming/).
 >
@@ -28,8 +28,8 @@ Generative modeling can be formulated as learning a mapping f such that its push
 </details>
 
 **Resource**: 
-- [📄 PDF url](https://arxiv.org/pdf/2602.04770v1) 
-- [🔗 arXiv url](https://arxiv.org/abs/2602.04770v1)
+- [📄 PDF url](https://arxiv.org/pdf/2602.04770v2) 
+- [🔗 arXiv url](https://arxiv.org/abs/2602.04770v2)
 
 ---
 
