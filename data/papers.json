@@ -1,6 +1,26 @@
 {
-  "last_updated": "2026-02-24T04:06:49.022171",
+  "last_updated": "2026-02-25T04:08:38.745956",
   "papers": [
+    {
+      "id": "2602.20399v1",
+      "title": "GeoPT: Scaling Physics Simulation via Lifted Geometric Pre-Training",
+      "authors": [
+        "Haixu Wu",
+        "Minghao Guo",
+        "Zongyi Li",
+        "Zhiyang Dou",
+        "Mingsheng Long",
+        "Kaiming He",
+        "Wojciech Matusik"
+      ],
+      "summary": "Neural simulators promise efficient surrogates for physics simulation, but scaling them is bottlenecked by the prohibitive cost of generating high-fidelity training data. Pre-training on abundant off-the-shelf geometries offers a natural alternative, yet faces a fundamental gap: supervision on static geometry alone ignores dynamics and can lead to negative transfer on physics tasks. We present GeoPT, a unified pre-trained model for general physics simulation based on lifted geometric pre-training. The core idea is to augment geometry with synthetic dynamics, enabling dynamics-aware self-supervision without physics labels. Pre-trained on over one million samples, GeoPT consistently improves industrial-fidelity benchmarks spanning fluid mechanics for cars, aircraft, and ships, and solid mechanics in crash simulation, reducing labeled data requirements by 20-60% and accelerating convergence by 2$\\times$. These results show that lifting with synthetic dynamics bridges the geometry-physics gap, unlocking a scalable path for neural simulation and potentially beyond. Code is available at https://github.com/Physics-Scaling/GeoPT.",
+      "published": "2026-02-23",
+      "updated": "2026-02-23",
+      "pdf_url": "https://arxiv.org/pdf/2602.20399v1",
+      "primary_category": "cs.LG",
+      "affiliation": "MIT CSAIL",
+      "arxiv_url": "https://arxiv.org/abs/2602.20399v1"
+    },
     {
       "id": "2602.04770v2",
       "title": "Generative Modeling via Drifting",
@@ -874,24 +894,6 @@
       "primary_category": "cs.CV",
       "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/1712.04440v1"
-    },
-    {
-      "id": "1711.10370v2",
-      "title": "Learning to Segment Every Thing",
-      "authors": [
-        "Ronghang Hu",
-        "Piotr Dollár",
-        "Kaiming He",
-        "Trevor Darrell",
-        "Ross Girshick"
-      ],
-      "summary": "Most methods for object instance segmentation require all training examples to be labeled with segmentation masks. This requirement makes it expensive to annotate new categories and has restricted instance segmentation models to ~100 well-annotated classes. The goal of this paper is to propose a new partially supervised training paradigm, together with a novel weight transfer function, that enables training instance segmentation models on a large set of categories all of which have box annotations, but only a small fraction of which have mask annotations. These contributions allow us to train Mask R-CNN to detect and segment 3000 visual concepts using box annotations from the Visual Genome dataset and mask annotations from the 80 classes in the COCO dataset. We evaluate our approach in a controlled study on the COCO dataset. This work is a first step towards instance segmentation models that have broad comprehension of the visual world.",
-      "published": "2017-11-28",
-      "updated": "2018-03-27",
-      "pdf_url": "https://arxiv.org/pdf/1711.10370v2",
-      "primary_category": "cs.CV",
-      "affiliation": "MIT CSAIL",
-      "arxiv_url": "https://arxiv.org/abs/1711.10370v2"
     }
   ]
 }
