@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-03T04:17:54.389522",
+  "last_updated": "2026-04-04T04:05:28.079823",
   "papers": [
     {
       "id": "2602.20399v1",
@@ -18,7 +18,7 @@
       "updated": "2026-02-23",
       "pdf_url": "https://arxiv.org/pdf/2602.20399v1",
       "primary_category": "cs.LG",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2602.20399v1"
     },
     {
@@ -36,7 +36,7 @@
       "updated": "2026-02-06",
       "pdf_url": "https://arxiv.org/pdf/2602.04770v2",
       "primary_category": "cs.LG",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2602.04770v2"
     },
     {
@@ -58,7 +58,7 @@
       "updated": "2026-02-05",
       "pdf_url": "https://arxiv.org/pdf/2601.22158v2",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2601.22158v2"
     },
     {
@@ -77,7 +77,7 @@
       "updated": "2025-12-11",
       "pdf_url": "https://arxiv.org/pdf/2512.10953v1",
       "primary_category": "cs.LG",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2512.10953v1"
     },
     {
@@ -96,7 +96,7 @@
       "updated": "2025-12-01",
       "pdf_url": "https://arxiv.org/pdf/2512.02012v1",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2512.02012v1"
     },
     {
@@ -117,7 +117,7 @@
       "updated": "2025-11-18",
       "pdf_url": "https://arxiv.org/pdf/2511.14761v1",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2511.14761v1"
     },
     {
@@ -132,7 +132,7 @@
       "updated": "2026-01-07",
       "pdf_url": "https://arxiv.org/pdf/2511.13720v2",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2511.13720v2"
     },
     {
@@ -147,7 +147,7 @@
       "updated": "2025-07-24",
       "pdf_url": "https://arxiv.org/pdf/2506.09027v2",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2506.09027v2"
     },
     {
@@ -165,7 +165,7 @@
       "updated": "2025-05-19",
       "pdf_url": "https://arxiv.org/pdf/2505.13447v1",
       "primary_category": "cs.LG",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2505.13447v1"
     },
     {
@@ -183,7 +183,7 @@
       "updated": "2025-06-14",
       "pdf_url": "https://arxiv.org/pdf/2503.10622v2",
       "primary_category": "cs.LG",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2503.10622v2"
     },
     {
@@ -204,7 +204,7 @@
       "updated": "2025-03-10",
       "pdf_url": "https://arxiv.org/pdf/2503.07596v1",
       "primary_category": "cs.LG",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2503.07596v1"
     },
     {
@@ -221,7 +221,7 @@
       "updated": "2025-02-25",
       "pdf_url": "https://arxiv.org/pdf/2502.17437v2",
       "primary_category": "cs.LG",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2502.17437v2"
     },
     {
@@ -238,7 +238,7 @@
       "updated": "2025-11-17",
       "pdf_url": "https://arxiv.org/pdf/2502.13129v2",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2502.13129v2"
     },
     {
@@ -260,7 +260,7 @@
       "updated": "2024-10-17",
       "pdf_url": "https://arxiv.org/pdf/2410.13863v1",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2410.13863v1"
     },
     {
@@ -277,7 +277,7 @@
       "updated": "2024-09-30",
       "pdf_url": "https://arxiv.org/pdf/2409.20537v1",
       "primary_category": "cs.RO",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2409.20537v1"
     },
     {
@@ -295,7 +295,7 @@
       "updated": "2024-11-01",
       "pdf_url": "https://arxiv.org/pdf/2406.11838v3",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2406.11838v3"
     },
     {
@@ -317,7 +317,7 @@
       "updated": "2024-12-31",
       "pdf_url": "https://arxiv.org/pdf/2405.20510v3",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2405.20510v3"
     },
     {
@@ -334,7 +334,7 @@
       "updated": "2025-04-07",
       "pdf_url": "https://arxiv.org/pdf/2405.20283v4",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2405.20283v4"
     },
     {
@@ -351,7 +351,7 @@
       "updated": "2024-05-25",
       "pdf_url": "https://arxiv.org/pdf/2405.16380v1",
       "primary_category": "cs.LG",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2405.16380v1"
     },
     {
@@ -366,7 +366,7 @@
       "updated": "2025-03-03",
       "pdf_url": "https://arxiv.org/pdf/2403.08632v2",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2403.08632v2"
     },
     {
@@ -383,7 +383,7 @@
       "updated": "2024-01-25",
       "pdf_url": "https://arxiv.org/pdf/2401.14404v1",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2401.14404v1"
     },
     {
@@ -399,7 +399,7 @@
       "updated": "2024-11-01",
       "pdf_url": "https://arxiv.org/pdf/2312.03701v4",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2312.03701v4"
     },
     {
@@ -417,7 +417,7 @@
       "updated": "2023-03-30",
       "pdf_url": "https://arxiv.org/pdf/2212.00794v2",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2212.00794v2"
     },
     {
@@ -434,7 +434,7 @@
       "updated": "2022-10-21",
       "pdf_url": "https://arxiv.org/pdf/2205.09113v2",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2205.09113v2"
     },
     {
@@ -451,7 +451,7 @@
       "updated": "2022-06-10",
       "pdf_url": "https://arxiv.org/pdf/2203.16527v2",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2203.16527v2"
     },
     {
@@ -470,7 +470,7 @@
       "updated": "2021-11-22",
       "pdf_url": "https://arxiv.org/pdf/2111.11429v1",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2111.11429v1"
     },
     {
@@ -489,7 +489,7 @@
       "updated": "2021-12-19",
       "pdf_url": "https://arxiv.org/pdf/2111.06377v3",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2111.06377v3"
     },
     {
@@ -507,7 +507,7 @@
       "updated": "2021-04-29",
       "pdf_url": "https://arxiv.org/pdf/2104.14558v1",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2104.14558v1"
     },
     {
@@ -523,7 +523,7 @@
       "updated": "2021-08-16",
       "pdf_url": "https://arxiv.org/pdf/2104.02057v4",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2104.02057v4"
     },
     {
@@ -538,7 +538,7 @@
       "updated": "2020-11-20",
       "pdf_url": "https://arxiv.org/pdf/2011.10566v1",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2011.10566v1"
     },
     {
@@ -555,7 +555,7 @@
       "updated": "2020-08-27",
       "pdf_url": "https://arxiv.org/pdf/2007.06559v2",
       "primary_category": "cs.LG",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2007.06559v2"
     },
     {
@@ -573,7 +573,7 @@
       "updated": "2020-03-30",
       "pdf_url": "https://arxiv.org/pdf/2003.13678v1",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2003.13678v1"
     },
     {
@@ -592,7 +592,7 @@
       "updated": "2020-08-03",
       "pdf_url": "https://arxiv.org/pdf/2003.12056v2",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2003.12056v2"
     },
     {
@@ -609,7 +609,7 @@
       "updated": "2020-03-09",
       "pdf_url": "https://arxiv.org/pdf/2003.04297v1",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/2003.04297v1"
     },
     {
@@ -626,7 +626,7 @@
       "updated": "2020-02-16",
       "pdf_url": "https://arxiv.org/pdf/1912.08193v2",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/1912.08193v2"
     },
     {
@@ -644,7 +644,7 @@
       "updated": "2020-06-10",
       "pdf_url": "https://arxiv.org/pdf/1912.00998v2",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/1912.00998v2"
     },
     {
@@ -662,7 +662,7 @@
       "updated": "2020-03-23",
       "pdf_url": "https://arxiv.org/pdf/1911.05722v3",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/1911.05722v3"
     },
     {
@@ -679,7 +679,7 @@
       "updated": "2019-08-22",
       "pdf_url": "https://arxiv.org/pdf/1904.09664v2",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/1904.09664v2"
     },
     {
@@ -696,7 +696,7 @@
       "updated": "2019-04-08",
       "pdf_url": "https://arxiv.org/pdf/1904.01569v2",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/1904.01569v2"
     },
     {
@@ -713,7 +713,7 @@
       "updated": "2019-08-27",
       "pdf_url": "https://arxiv.org/pdf/1903.12174v2",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/1903.12174v2"
     },
     {
@@ -730,7 +730,7 @@
       "updated": "2019-04-10",
       "pdf_url": "https://arxiv.org/pdf/1901.02446v2",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/1901.02446v2"
     },
     {
@@ -749,7 +749,7 @@
       "updated": "2019-04-17",
       "pdf_url": "https://arxiv.org/pdf/1812.05038v2",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/1812.05038v2"
     },
     {
@@ -766,7 +766,7 @@
       "updated": "2019-10-29",
       "pdf_url": "https://arxiv.org/pdf/1812.03982v3",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/1812.03982v3"
     },
     {
@@ -784,7 +784,7 @@
       "updated": "2019-03-25",
       "pdf_url": "https://arxiv.org/pdf/1812.03411v2",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/1812.03411v2"
     },
     {
@@ -800,7 +800,7 @@
       "updated": "2018-11-21",
       "pdf_url": "https://arxiv.org/pdf/1811.08883v1",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/1811.08883v1"
     },
     {
@@ -820,7 +820,7 @@
       "updated": "2018-07-02",
       "pdf_url": "https://arxiv.org/pdf/1806.05662v3",
       "primary_category": "cs.LG",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/1806.05662v3"
     },
     {
@@ -841,7 +841,7 @@
       "updated": "2018-05-02",
       "pdf_url": "https://arxiv.org/pdf/1805.00932v1",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/1805.00932v1"
     },
     {
@@ -856,7 +856,7 @@
       "updated": "2018-06-11",
       "pdf_url": "https://arxiv.org/pdf/1803.08494v3",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/1803.08494v3"
     },
     {
@@ -874,7 +874,7 @@
       "updated": "2019-04-10",
       "pdf_url": "https://arxiv.org/pdf/1801.00868v3",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/1801.00868v3"
     },
     {
@@ -892,7 +892,7 @@
       "updated": "2017-12-12",
       "pdf_url": "https://arxiv.org/pdf/1712.04440v1",
       "primary_category": "cs.CV",
-      "affiliation": "MIT",
+      "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/1712.04440v1"
     }
   ]
