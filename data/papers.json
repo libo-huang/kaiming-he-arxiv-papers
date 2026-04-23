@@ -1,6 +1,44 @@
 {
-  "last_updated": "2026-04-22T04:36:19.847519",
+  "last_updated": "2026-04-23T04:41:05.739326",
   "papers": [
+    {
+      "id": "2604.20329v1",
+      "title": "Image Generators are Generalist Vision Learners",
+      "authors": [
+        "Valentin Gabeur",
+        "Shangbang Long",
+        "Songyou Peng",
+        "Paul Voigtlaender",
+        "Shuyang Sun",
+        "Yanan Bao",
+        "Karen Truong",
+        "Zhicheng Wang",
+        "Wenlei Zhou",
+        "Jonathan T. Barron",
+        "Kyle Genova",
+        "Nithish Kannen",
+        "Sherry Ben",
+        "Yandong Li",
+        "Mandy Guo",
+        "Suhas Yogin",
+        "Yiming Gu",
+        "Huizhong Chen",
+        "Oliver Wang",
+        "Saining Xie",
+        "Howard Zhou",
+        "Kaiming He",
+        "Thomas Funkhouser",
+        "Jean-Baptiste Alayrac",
+        "Radu Soricut"
+      ],
+      "summary": "Recent works show that image and video generators exhibit zero-shot visual understanding behaviors, in a way reminiscent of how LLMs develop emergent capabilities of language understanding and reasoning from generative pretraining. While it has long been conjectured that the ability to create visual content implies an ability to understand it, there has been limited evidence that generative vision models have developed strong understanding capabilities. In this work, we demonstrate that image generation training serves a role similar to LLM pretraining, and lets models learn powerful and general visual representations that enable SOTA performance on various vision tasks. We introduce Vision Banana, a generalist model built by instruction-tuning Nano Banana Pro (NBP) on a mixture of its original training data alongside a small amount of vision task data. By parameterizing the output space of vision tasks as RGB images, we seamlessly reframe perception as image generation. Our generalist model, Vision Banana, achieves SOTA results on a variety of vision tasks involving both 2D and 3D understanding, beating or rivaling zero-shot domain-specialists, including Segment Anything Model 3 on segmentation tasks, and the Depth Anything series on metric depth estimation. We show that these results can be achieved with lightweight instruction-tuning without sacrificing the base model's image generation capabilities. The superior results suggest that image generation pretraining is a generalist vision learner. It also shows that image generation serves as a unified and universal interface for vision tasks, similar to text generation's role in language understanding and reasoning. We could be witnessing a major paradigm shift for computer vision, where generative vision pretraining takes a central role in building Foundational Vision Models for both generation and understanding.",
+      "published": "2026-04-22",
+      "updated": "2026-04-22",
+      "pdf_url": "https://arxiv.org/pdf/2604.20329v1",
+      "primary_category": "cs.CV",
+      "affiliation": "MIT CSAIL",
+      "arxiv_url": "https://arxiv.org/abs/2604.20329v1"
+    },
     {
       "id": "2602.20399v1",
       "title": "GeoPT: Scaling Physics Simulation via Lifted Geometric Pre-Training",
@@ -876,24 +914,6 @@
       "primary_category": "cs.CV",
       "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/1801.00868v3"
-    },
-    {
-      "id": "1712.04440v1",
-      "title": "Data Distillation: Towards Omni-Supervised Learning",
-      "authors": [
-        "Ilija Radosavovic",
-        "Piotr Dollár",
-        "Ross Girshick",
-        "Georgia Gkioxari",
-        "Kaiming He"
-      ],
-      "summary": "We investigate omni-supervised learning, a special regime of semi-supervised learning in which the learner exploits all available labeled data plus internet-scale sources of unlabeled data. Omni-supervised learning is lower-bounded by performance on existing labeled datasets, offering the potential to surpass state-of-the-art fully supervised methods. To exploit the omni-supervised setting, we propose data distillation, a method that ensembles predictions from multiple transformations of unlabeled data, using a single model, to automatically generate new training annotations. We argue that visual recognition models have recently become accurate enough that it is now possible to apply classic ideas about self-training to challenging real-world data. Our experimental results show that in the cases of human keypoint detection and general object detection, state-of-the-art models trained with data distillation surpass the performance of using labeled data from the COCO dataset alone.",
-      "published": "2017-12-12",
-      "updated": "2017-12-12",
-      "pdf_url": "https://arxiv.org/pdf/1712.04440v1",
-      "primary_category": "cs.CV",
-      "affiliation": "MIT CSAIL",
-      "arxiv_url": "https://arxiv.org/abs/1712.04440v1"
     }
   ]
 }
