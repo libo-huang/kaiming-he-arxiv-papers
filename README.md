@@ -1,6 +1,6 @@
 # Kaiming He newest airxiv papers
 
-> Page last update: 2026-04-30 05:20:15 
+> Page last update: 2026-05-01 05:31:46 
 > 
 > The project automatically fetches the latest papers from the arXiv of [Kaiming He](https://people.csail.mit.edu/kaiming/).
 >
@@ -16,7 +16,7 @@
 ### 1. Image Generators are Generalist Vision Learners
 
 **Authors**: Valentin Gabeur, Shangbang Long, Songyou Peng, Paul Voigtlaender, Shuyang Sun, Yanan Bao, Karen Truong, Zhicheng Wang, Wenlei Zhou, Jonathan T. Barron, Kyle Genova, Nithish Kannen, Sherry Ben, Yandong Li, Mandy Guo, Suhas Yogin, Yiming Gu, Huizhong Chen, Oliver Wang, Saining Xie, Howard Zhou, Kaiming He, Thomas Funkhouser, Jean-Baptiste Alayrac, Radu Soricut  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2026-04-22  
 **Primary Category**: cs.CV  
 
@@ -36,7 +36,7 @@ Recent works show that image and video generators exhibit zero-shot visual under
 ### 2. GeoPT: Scaling Physics Simulation via Lifted Geometric Pre-Training
 
 **Authors**: Haixu Wu, Minghao Guo, Zongyi Li, Zhiyang Dou, Mingsheng Long, Kaiming He, Wojciech Matusik  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2026-02-23  
 **Primary Category**: cs.LG  
 
@@ -56,7 +56,7 @@ Neural simulators promise efficient surrogates for physics simulation, but scali
 ### 3. Generative Modeling via Drifting
 
 **Authors**: Mingyang Deng, He Li, Tianhong Li, Yilun Du, Kaiming He  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2026-02-04  
 **Primary Category**: cs.LG  
 
@@ -76,7 +76,7 @@ Generative modeling can be formulated as learning a mapping f such that its push
 ### 4. One-step Latent-free Image Generation with Pixel Mean Flows
 
 **Authors**: Yiyang Lu, Susie Lu, Qiao Sun, Hanhong Zhao, Zhicheng Jiang, Xianbang Wang, Tianhong Li, Zhengyang Geng, Kaiming He  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2026-01-29  
 **Primary Category**: cs.CV  
 
@@ -96,7 +96,7 @@ Modern diffusion/flow-based models for image generation typically exhibit two co
 ### 5. Bidirectional Normalizing Flow: From Data to Noise and Back
 
 **Authors**: Yiyang Lu, Qiao Sun, Xianbang Wang, Zhicheng Jiang, Hanhong Zhao, Kaiming He  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2025-12-11  
 **Primary Category**: cs.LG  
 
@@ -116,7 +116,7 @@ Normalizing Flows (NFs) have been established as a principled framework for gene
 ### 6. Improved Mean Flows: On the Challenges of Fastforward Generative Models
 
 **Authors**: Zhengyang Geng, Yiyang Lu, Zongze Wu, Eli Shechtman, J. Zico Kolter, Kaiming He  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2025-12-01  
 **Primary Category**: cs.CV  
 
@@ -136,7 +136,7 @@ MeanFlow (MF) has recently been established as a framework for one-step generati
 ### 7. ARC Is a Vision Problem!
 
 **Authors**: Keya Hu, Ali Cy, Linlu Qiu, Xiaoman Delores Ding, Runqian Wang, Yeyin Eva Zhu, Jacob Andreas, Kaiming He  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2025-11-18  
 **Primary Category**: cs.CV  
 
@@ -156,7 +156,7 @@ The Abstraction and Reasoning Corpus (ARC) is designed to promote research on ab
 ### 8. Back to Basics: Let Denoising Generative Models Denoise
 
 **Authors**: Tianhong Li, Kaiming He  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2025-11-17  
 **Primary Category**: cs.CV  
 
@@ -176,7 +176,7 @@ Today's denoising diffusion models do not "denoise" in the classical sense, i.e.
 ### 9. Diffuse and Disperse: Image Generation with Representation Regularization
 
 **Authors**: Runqian Wang, Kaiming He  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2025-06-10  
 **Primary Category**: cs.CV  
 
@@ -196,7 +196,7 @@ The development of diffusion-based generative models over the past decade has la
 ### 10. Mean Flows for One-step Generative Modeling
 
 **Authors**: Zhengyang Geng, Mingyang Deng, Xingjian Bai, J. Zico Kolter, Kaiming He  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2025-05-19  
 **Primary Category**: cs.LG  
 
@@ -216,7 +216,7 @@ We propose a principled and effective framework for one-step generative modeling
 ### 11. Transformers without Normalization
 
 **Authors**: Jiachen Zhu, Xinlei Chen, Kaiming He, Yann LeCun, Zhuang Liu  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2025-03-13  
 **Primary Category**: cs.LG  
 
@@ -236,7 +236,7 @@ Normalization layers are ubiquitous in modern neural networks and have long been
 ### 12. Denoising Hamiltonian Network for Physical Reasoning
 
 **Authors**: Congyue Deng, Brandon Y. Feng, Cecilia Garraffo, Alan Garbarz, Robin Walters, William T. Freeman, Leonidas Guibas, Kaiming He  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2025-03-10  
 **Primary Category**: cs.LG  
 
@@ -256,7 +256,7 @@ Machine learning frameworks for physical problems must capture and enforce physi
 ### 13. Fractal Generative Models
 
 **Authors**: Tianhong Li, Qinyi Sun, Lijie Fan, Kaiming He  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2025-02-24  
 **Primary Category**: cs.LG  
 
@@ -276,7 +276,7 @@ Modularization is a cornerstone of computer science, abstracting complex functio
 ### 14. Is Noise Conditioning Necessary for Denoising Generative Models?
 
 **Authors**: Qiao Sun, Zhicheng Jiang, Hanhong Zhao, Kaiming He  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2025-02-18  
 **Primary Category**: cs.CV  
 
@@ -296,7 +296,7 @@ It is widely believed that noise conditioning is indispensable for denoising dif
 ### 15. Fluid: Scaling Autoregressive Text-to-image Generative Models with Continuous Tokens
 
 **Authors**: Lijie Fan, Tianhong Li, Siyang Qin, Yuanzhen Li, Chen Sun, Michael Rubinstein, Deqing Sun, Kaiming He, Yonglong Tian  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2024-10-17  
 **Primary Category**: cs.CV  
 
@@ -316,7 +316,7 @@ Scaling up autoregressive models in vision has not proven as beneficial as in la
 ### 16. Scaling Proprioceptive-Visual Learning with Heterogeneous Pre-trained Transformers
 
 **Authors**: Lirui Wang, Xinlei Chen, Jialiang Zhao, Kaiming He  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2024-09-30  
 **Primary Category**: cs.RO  
 
@@ -336,7 +336,7 @@ One of the roadblocks for training generalist robotic models today is heterogene
 ### 17. Autoregressive Image Generation without Vector Quantization
 
 **Authors**: Tianhong Li, Yonglong Tian, He Li, Mingyang Deng, Kaiming He  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2024-06-17  
 **Primary Category**: cs.CV  
 
@@ -356,7 +356,7 @@ Conventional wisdom holds that autoregressive models for image generation are ty
 ### 18. Physically Compatible 3D Object Modeling from a Single Image
 
 **Authors**: Minghao Guo, Bohan Wang, Pingchuan Ma, Tianyuan Zhang, Crystal Elaine Owens, Chuang Gan, Joshua B. Tenenbaum, Kaiming He, Wojciech Matusik  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2024-05-30  
 **Primary Category**: cs.CV  
 
@@ -376,7 +376,7 @@ We present a computational framework that transforms single images into 3D physi
 ### 19. TetSphere Splatting: Representing High-Quality Geometry with Lagrangian Volumetric Meshes
 
 **Authors**: Minghao Guo, Bohan Wang, Kaiming He, Wojciech Matusik  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2024-05-30  
 **Primary Category**: cs.CV  
 
@@ -396,7 +396,7 @@ We introduce TetSphere Splatting, a Lagrangian geometry representation designed 
 ### 20. Dynamic Inhomogeneous Quantum Resource Scheduling with Reinforcement Learning
 
 **Authors**: Linsen Li, Pratyush Anand, Kaiming He, Dirk Englund  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2024-05-25  
 **Primary Category**: cs.LG  
 
@@ -416,7 +416,7 @@ A central challenge in quantum information science and technology is achieving r
 ### 21. A Decade's Battle on Dataset Bias: Are We There Yet?
 
 **Authors**: Zhuang Liu, Kaiming He  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2024-03-13  
 **Primary Category**: cs.CV  
 
@@ -436,7 +436,7 @@ We revisit the "dataset classification" experiment suggested by Torralba & Efros
 ### 22. Deconstructing Denoising Diffusion Models for Self-Supervised Learning
 
 **Authors**: Xinlei Chen, Zhuang Liu, Saining Xie, Kaiming He  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2024-01-25  
 **Primary Category**: cs.CV  
 
@@ -456,7 +456,7 @@ In this study, we examine the representation learning abilities of Denoising Dif
 ### 23. Return of Unconditional Generation: A Self-supervised Representation Generation Method
 
 **Authors**: Tianhong Li, Dina Katabi, Kaiming He  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2023-12-06  
 **Primary Category**: cs.CV  
 
@@ -476,7 +476,7 @@ Unconditional generation -- the problem of modeling data distribution without re
 ### 24. Scaling Language-Image Pre-training via Masking
 
 **Authors**: Yanghao Li, Haoqi Fan, Ronghang Hu, Christoph Feichtenhofer, Kaiming He  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2022-12-01  
 **Primary Category**: cs.CV  
 
@@ -496,7 +496,7 @@ We present Fast Language-Image Pre-training (FLIP), a simple and more efficient 
 ### 25. Masked Autoencoders As Spatiotemporal Learners
 
 **Authors**: Christoph Feichtenhofer, Haoqi Fan, Yanghao Li, Kaiming He  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2022-05-18  
 **Primary Category**: cs.CV  
 
@@ -516,7 +516,7 @@ This paper studies a conceptually simple extension of Masked Autoencoders (MAE) 
 ### 26. Exploring Plain Vision Transformer Backbones for Object Detection
 
 **Authors**: Yanghao Li, Hanzi Mao, Ross Girshick, Kaiming He  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2022-03-30  
 **Primary Category**: cs.CV  
 
@@ -536,7 +536,7 @@ We explore the plain, non-hierarchical Vision Transformer (ViT) as a backbone ne
 ### 27. Benchmarking Detection Transfer Learning with Vision Transformers
 
 **Authors**: Yanghao Li, Saining Xie, Xinlei Chen, Piotr Dollar, Kaiming He, Ross Girshick  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2021-11-22  
 **Primary Category**: cs.CV  
 
@@ -556,7 +556,7 @@ Object detection is a central downstream task used to test if pre-trained networ
 ### 28. Masked Autoencoders Are Scalable Vision Learners
 
 **Authors**: Kaiming He, Xinlei Chen, Saining Xie, Yanghao Li, Piotr Dollár, Ross Girshick  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2021-11-11  
 **Primary Category**: cs.CV  
 
@@ -576,7 +576,7 @@ This paper shows that masked autoencoders (MAE) are scalable self-supervised lea
 ### 29. A Large-Scale Study on Unsupervised Spatiotemporal Representation Learning
 
 **Authors**: Christoph Feichtenhofer, Haoqi Fan, Bo Xiong, Ross Girshick, Kaiming He  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2021-04-29  
 **Primary Category**: cs.CV  
 
@@ -596,7 +596,7 @@ We present a large-scale study on unsupervised spatiotemporal representation lea
 ### 30. An Empirical Study of Training Self-Supervised Vision Transformers
 
 **Authors**: Xinlei Chen, Saining Xie, Kaiming He  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2021-04-05  
 **Primary Category**: cs.CV  
 
@@ -616,7 +616,7 @@ This paper does not describe a novel method. Instead, it studies a straightforwa
 ### 31. Exploring Simple Siamese Representation Learning
 
 **Authors**: Xinlei Chen, Kaiming He  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2020-11-20  
 **Primary Category**: cs.CV  
 
@@ -636,7 +636,7 @@ Siamese networks have become a common structure in various recent models for uns
 ### 32. Graph Structure of Neural Networks
 
 **Authors**: Jiaxuan You, Jure Leskovec, Kaiming He, Saining Xie  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2020-07-13  
 **Primary Category**: cs.LG  
 
@@ -656,7 +656,7 @@ Neural networks are often represented as graphs of connections between neurons. 
 ### 33. Designing Network Design Spaces
 
 **Authors**: Ilija Radosavovic, Raj Prateek Kosaraju, Ross Girshick, Kaiming He, Piotr Dollár  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2020-03-30  
 **Primary Category**: cs.CV  
 
@@ -676,7 +676,7 @@ In this work, we present a new network design paradigm. Our goal is to help adva
 ### 34. Are Labels Necessary for Neural Architecture Search?
 
 **Authors**: Chenxi Liu, Piotr Dollár, Kaiming He, Ross Girshick, Alan Yuille, Saining Xie  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2020-03-26  
 **Primary Category**: cs.CV  
 
@@ -696,7 +696,7 @@ Existing neural network architectures in computer vision -- whether designed by 
 ### 35. Improved Baselines with Momentum Contrastive Learning
 
 **Authors**: Xinlei Chen, Haoqi Fan, Ross Girshick, Kaiming He  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2020-03-09  
 **Primary Category**: cs.CV  
 
@@ -716,7 +716,7 @@ Contrastive unsupervised learning has recently shown encouraging progress, e.g.,
 ### 36. PointRend: Image Segmentation as Rendering
 
 **Authors**: Alexander Kirillov, Yuxin Wu, Kaiming He, Ross Girshick  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2019-12-17  
 **Primary Category**: cs.CV  
 
@@ -736,7 +736,7 @@ We present a new method for efficient high-quality image segmentation of objects
 ### 37. A Multigrid Method for Efficiently Training Video Models
 
 **Authors**: Chao-Yuan Wu, Ross Girshick, Kaiming He, Christoph Feichtenhofer, Philipp Krähenbühl  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2019-12-02  
 **Primary Category**: cs.CV  
 
@@ -756,7 +756,7 @@ Training competitive deep video models is an order of magnitude slower than trai
 ### 38. Momentum Contrast for Unsupervised Visual Representation Learning
 
 **Authors**: Kaiming He, Haoqi Fan, Yuxin Wu, Saining Xie, Ross Girshick  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2019-11-13  
 **Primary Category**: cs.CV  
 
@@ -776,7 +776,7 @@ We present Momentum Contrast (MoCo) for unsupervised visual representation learn
 ### 39. Deep Hough Voting for 3D Object Detection in Point Clouds
 
 **Authors**: Charles R. Qi, Or Litany, Kaiming He, Leonidas J. Guibas  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2019-04-21  
 **Primary Category**: cs.CV  
 
@@ -796,7 +796,7 @@ Current 3D object detection methods are heavily influenced by 2D detectors. In o
 ### 40. Exploring Randomly Wired Neural Networks for Image Recognition
 
 **Authors**: Saining Xie, Alexander Kirillov, Ross Girshick, Kaiming He  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2019-04-02  
 **Primary Category**: cs.CV  
 
@@ -816,7 +816,7 @@ Neural networks for image recognition have evolved through extensive manual desi
 ### 41. TensorMask: A Foundation for Dense Object Segmentation
 
 **Authors**: Xinlei Chen, Ross Girshick, Kaiming He, Piotr Dollár  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2019-03-28  
 **Primary Category**: cs.CV  
 
@@ -836,7 +836,7 @@ Sliding-window object detectors that generate bounding-box object predictions ov
 ### 42. Panoptic Feature Pyramid Networks
 
 **Authors**: Alexander Kirillov, Ross Girshick, Kaiming He, Piotr Dollár  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2019-01-08  
 **Primary Category**: cs.CV  
 
@@ -856,7 +856,7 @@ The recently introduced panoptic segmentation task has renewed our community's i
 ### 43. Long-Term Feature Banks for Detailed Video Understanding
 
 **Authors**: Chao-Yuan Wu, Christoph Feichtenhofer, Haoqi Fan, Kaiming He, Philipp Krähenbühl, Ross Girshick  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2018-12-12  
 **Primary Category**: cs.CV  
 
@@ -876,7 +876,7 @@ To understand the world, we humans constantly need to relate the present to the 
 ### 44. SlowFast Networks for Video Recognition
 
 **Authors**: Christoph Feichtenhofer, Haoqi Fan, Jitendra Malik, Kaiming He  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2018-12-10  
 **Primary Category**: cs.CV  
 
@@ -896,7 +896,7 @@ We present SlowFast networks for video recognition. Our model involves (i) a Slo
 ### 45. Feature Denoising for Improving Adversarial Robustness
 
 **Authors**: Cihang Xie, Yuxin Wu, Laurens van der Maaten, Alan Yuille, Kaiming He  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2018-12-09  
 **Primary Category**: cs.CV  
 
@@ -916,7 +916,7 @@ Adversarial attacks to image classification systems present challenges to convol
 ### 46. Rethinking ImageNet Pre-training
 
 **Authors**: Kaiming He, Ross Girshick, Piotr Dollár  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2018-11-21  
 **Primary Category**: cs.CV  
 
@@ -936,7 +936,7 @@ We report competitive results on object detection and instance segmentation on t
 ### 47. GLoMo: Unsupervisedly Learned Relational Graphs as Transferable Representations
 
 **Authors**: Zhilin Yang, Jake Zhao, Bhuwan Dhingra, Kaiming He, William W. Cohen, Ruslan Salakhutdinov, Yann LeCun  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2018-06-14  
 **Primary Category**: cs.LG  
 
@@ -956,7 +956,7 @@ Modern deep transfer learning approaches have mainly focused on learning generic
 ### 48. Exploring the Limits of Weakly Supervised Pretraining
 
 **Authors**: Dhruv Mahajan, Ross Girshick, Vignesh Ramanathan, Kaiming He, Manohar Paluri, Yixuan Li, Ashwin Bharambe, Laurens van der Maaten  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2018-05-02  
 **Primary Category**: cs.CV  
 
@@ -976,7 +976,7 @@ State-of-the-art visual perception models for a wide range of tasks rely on supe
 ### 49. Group Normalization
 
 **Authors**: Yuxin Wu, Kaiming He  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2018-03-22  
 **Primary Category**: cs.CV  
 
@@ -996,7 +996,7 @@ Batch Normalization (BN) is a milestone technique in the development of deep lea
 ### 50. Panoptic Segmentation
 
 **Authors**: Alexander Kirillov, Kaiming He, Ross Girshick, Carsten Rother, Piotr Dollár  
-**Affiliation**: MIT CSAIL  
+**Affiliation**: MIT  
 **Published Date**: 2018-01-03  
 **Primary Category**: cs.CV  
 
