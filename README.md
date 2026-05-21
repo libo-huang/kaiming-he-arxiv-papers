@@ -1,6 +1,6 @@
 # Kaiming He newest airxiv papers
 
-> Page last update: 2026-05-20 05:55:59 
+> Page last update: 2026-05-21 05:59:20 
 > 
 > The project automatically fetches the latest papers from the arXiv of [Kaiming He](https://people.csail.mit.edu/kaiming/).
 >
@@ -68,8 +68,8 @@ Neural simulators promise efficient surrogates for physics simulation, but scali
 </details>
 
 **Resource**: 
-- [📄 PDF url](https://arxiv.org/pdf/2602.20399v1) 
-- [🔗 arXiv url](https://arxiv.org/abs/2602.20399v1)
+- [📄 PDF url](https://arxiv.org/pdf/2602.20399v2) 
+- [🔗 arXiv url](https://arxiv.org/abs/2602.20399v2)
 
 ---
 

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-20T05:55:59.474107",
+  "last_updated": "2026-05-21T05:59:20.184492",
   "papers": [
     {
       "id": "2605.10938v1",
@@ -61,7 +61,7 @@
       "arxiv_url": "https://arxiv.org/abs/2604.20329v2"
     },
     {
-      "id": "2602.20399v1",
+      "id": "2602.20399v2",
       "title": "GeoPT: Scaling Physics Simulation via Lifted Geometric Pre-Training",
       "authors": [
         "Haixu Wu",
@@ -74,11 +74,11 @@
       ],
       "summary": "Neural simulators promise efficient surrogates for physics simulation, but scaling them is bottlenecked by the prohibitive cost of generating high-fidelity training data. Pre-training on abundant off-the-shelf geometries offers a natural alternative, yet faces a fundamental gap: supervision on static geometry alone ignores dynamics and can lead to negative transfer on physics tasks. We present GeoPT, a unified pre-trained model for general physics simulation based on lifted geometric pre-training. The core idea is to augment geometry with synthetic dynamics, enabling dynamics-aware self-supervision without physics labels. Pre-trained on over one million samples, GeoPT consistently improves industrial-fidelity benchmarks spanning fluid mechanics for cars, aircraft, and ships, and solid mechanics in crash simulation, reducing labeled data requirements by 20-60% and accelerating convergence by 2$\\times$. These results show that lifting with synthetic dynamics bridges the geometry-physics gap, unlocking a scalable path for neural simulation and potentially beyond. Code is available at https://github.com/Physics-Scaling/GeoPT.",
       "published": "2026-02-23",
-      "updated": "2026-02-23",
-      "pdf_url": "https://arxiv.org/pdf/2602.20399v1",
+      "updated": "2026-05-20",
+      "pdf_url": "https://arxiv.org/pdf/2602.20399v2",
       "primary_category": "cs.LG",
       "affiliation": "MIT CSAIL",
-      "arxiv_url": "https://arxiv.org/abs/2602.20399v1"
+      "arxiv_url": "https://arxiv.org/abs/2602.20399v2"
     },
     {
       "id": "2602.04770v2",
