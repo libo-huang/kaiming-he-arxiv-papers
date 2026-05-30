@@ -1,17 +1,1017 @@
 # Kaiming He newest airxiv papers
 
-> Page last update: 2026-05-29 06:03:02 
+> Page last update: 2026-05-30 05:38:57 
 > 
 > The project automatically fetches the latest papers from the arXiv of [Kaiming He](https://people.csail.mit.edu/kaiming/).
 >
 > You can click the 'Watch' button to receive daily email notifications.
 
 ## Papers Summary
-- **Total Papers**: 0
-- **Paper Last Update**: N/A
+- **Total Papers**: 50
+- **Paper Last Update**: 2026-05-11
 
 ## Papers List
 
+
+### 1. ELF: Embedded Language Flows
+
+**Authors**: Keya Hu, Linlu Qiu, Yiyang Lu, Hanhong Zhao, Tianhong Li, Yoon Kim, Jacob Andreas, Kaiming He  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2026-05-11  
+**Primary Category**: cs.CL  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+Diffusion and flow-based models have become the de facto approaches for generating continuous data, e.g., in domains such as images and videos. Their success has attracted growing interest in applying them to language modeling. Unlike their image-domain counterparts, today's leading diffusion language models (DLMs) primarily operate over discrete tokens. In this paper, we show that continuous DLMs can be made effective with minimal adaptation to the discrete domain. We propose Embedded Language Flows (ELF), a class of diffusion models in continuous embedding space based on continuous-time Flow Matching. Unlike existing DLMs, ELF predominantly stays within the continuous embedding space until the final time step, where it maps to discrete tokens using a shared-weight network. This formulation makes it straightforward to adapt established techniques from image-domain diffusion models, e.g., classifier-free guidance (CFG). Experiments show that ELF substantially outperforms leading discrete and continuous DLMs, achieving better generation quality with fewer sampling steps. These results suggest that ELF offers a promising path toward effective continuous DLMs.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2605.10938v1) 
+- [🔗 arXiv url](https://arxiv.org/abs/2605.10938v1)
+
+---
+
+### 2. Image Generators are Generalist Vision Learners
+
+**Authors**: Valentin Gabeur, Shangbang Long, Songyou Peng, Paul Voigtlaender, Shuyang Sun, Yanan Bao, Karen Truong, Zhicheng Wang, Wenlei Zhou, Jonathan T. Barron, Kyle Genova, Nithish Kannen, Sherry Ben, Yandong Li, Mandy Guo, Suhas Yogin, Yiming Gu, Huizhong Chen, Oliver Wang, Saining Xie, Howard Zhou, Kaiming He, Thomas Funkhouser, Jean-Baptiste Alayrac, Radu Soricut  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2026-04-22  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+Recent works show that image and video generators exhibit zero-shot visual understanding behaviors, in a way reminiscent of how LLMs develop emergent capabilities of language understanding and reasoning from generative pretraining. While it has long been conjectured that the ability to create visual content implies an ability to understand it, there has been limited evidence that generative vision models have developed strong understanding capabilities. In this work, we demonstrate that image generation training serves a role similar to LLM pretraining, and lets models learn powerful and general visual representations that enable SOTA performance on various vision tasks. We introduce Vision Banana, a generalist model built by instruction-tuning Nano Banana Pro (NBP) on a mixture of its original training data alongside a small amount of vision task data. By parameterizing the output space of vision tasks as RGB images, we seamlessly reframe perception as image generation. Our generalist model, Vision Banana, achieves SOTA results on a variety of vision tasks involving both 2D and 3D understanding, beating or rivaling zero-shot domain-specialists, including Segment Anything Model 3 on segmentation tasks, and the Depth Anything series on metric depth estimation. We show that these results can be achieved with lightweight instruction-tuning without sacrificing the base model's image generation capabilities. The superior results suggest that image generation pretraining is a generalist vision learner. It also shows that image generation serves as a unified and universal interface for vision tasks, similar to text generation's role in language understanding and reasoning. We could be witnessing a major paradigm shift for computer vision, where generative vision pretraining takes a central role in building Foundational Vision Models for both generation and understanding.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2604.20329v2) 
+- [🔗 arXiv url](https://arxiv.org/abs/2604.20329v2)
+
+---
+
+### 3. GeoPT: Scaling Physics Simulation via Lifted Geometric Pre-Training
+
+**Authors**: Haixu Wu, Minghao Guo, Zongyi Li, Zhiyang Dou, Mingsheng Long, Kaiming He, Wojciech Matusik  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2026-02-23  
+**Primary Category**: cs.LG  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+Neural simulators promise efficient surrogates for physics simulation, but scaling them is bottlenecked by the prohibitive cost of generating high-fidelity training data. Pre-training on abundant off-the-shelf geometries offers a natural alternative, yet faces a fundamental gap: supervision on static geometry alone ignores dynamics and can lead to negative transfer on physics tasks. We present GeoPT, a unified pre-trained model for general physics simulation based on lifted geometric pre-training. The core idea is to augment geometry with synthetic dynamics, enabling dynamics-aware self-supervision without physics labels. Pre-trained on over one million samples, GeoPT consistently improves industrial-fidelity benchmarks spanning fluid mechanics for cars, aircraft, and ships, and solid mechanics in crash simulation, reducing labeled data requirements by 20-60% and accelerating convergence by 2$\times$. These results show that lifting with synthetic dynamics bridges the geometry-physics gap, unlocking a scalable path for neural simulation and potentially beyond. Code is available at https://github.com/Physics-Scaling/GeoPT.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2602.20399v2) 
+- [🔗 arXiv url](https://arxiv.org/abs/2602.20399v2)
+
+---
+
+### 4. Generative Modeling via Drifting
+
+**Authors**: Mingyang Deng, He Li, Tianhong Li, Yilun Du, Kaiming He  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2026-02-04  
+**Primary Category**: cs.LG  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+Generative modeling can be formulated as learning a mapping f such that its pushforward distribution matches the data distribution. The pushforward behavior can be carried out iteratively at inference time, for example in diffusion and flow-based models. In this paper, we propose a new paradigm called Drifting Models, which evolve the pushforward distribution during training and naturally admit one-step inference. We introduce a drifting field that governs the sample movement and achieves equilibrium when the distributions match. This leads to a training objective that allows the neural network optimizer to evolve the distribution. In experiments, our one-step generator achieves state-of-the-art results on ImageNet at 256 x 256 resolution, with an FID of 1.54 in latent space and 1.61 in pixel space. We hope that our work opens up new opportunities for high-quality one-step generation.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2602.04770v2) 
+- [🔗 arXiv url](https://arxiv.org/abs/2602.04770v2)
+
+---
+
+### 5. One-step Latent-free Image Generation with Pixel Mean Flows
+
+**Authors**: Yiyang Lu, Susie Lu, Qiao Sun, Hanhong Zhao, Zhicheng Jiang, Xianbang Wang, Tianhong Li, Zhengyang Geng, Kaiming He  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2026-01-29  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+Modern diffusion/flow-based models for image generation typically exhibit two core characteristics: (i) using multi-step sampling, and (ii) operating in a latent space. Recent advances have made encouraging progress on each aspect individually, paving the way toward one-step diffusion/flow without latents. In this work, we take a further step towards this goal and propose "pixel MeanFlow" (pMF). Our core guideline is to formulate the network output space and the loss space separately. The network target is designed to be on a presumed low-dimensional image manifold (i.e., x-prediction), while the loss is defined via MeanFlow in the velocity space. We introduce a simple transformation between the image manifold and the average velocity field. In experiments, pMF achieves strong results for one-step latent-free generation on ImageNet at 256x256 resolution (2.22 FID) and 512x512 resolution (2.48 FID), filling a key missing piece in this regime. We hope that our study will further advance the boundaries of diffusion/flow-based generative models.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2601.22158v3) 
+- [🔗 arXiv url](https://arxiv.org/abs/2601.22158v3)
+
+---
+
+### 6. Bidirectional Normalizing Flow: From Data to Noise and Back
+
+**Authors**: Yiyang Lu, Qiao Sun, Xianbang Wang, Zhicheng Jiang, Hanhong Zhao, Kaiming He  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2025-12-11  
+**Primary Category**: cs.LG  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+Normalizing Flows (NFs) have been established as a principled framework for generative modeling. Standard NFs consist of a forward process and a reverse process: the forward process maps data to noise, while the reverse process generates samples by inverting it. Typical NF forward transformations are constrained by explicit invertibility, ensuring that the reverse process can serve as their exact analytic inverse. Recent developments in TARFlow and its variants have revitalized NF methods by combining Transformers and autoregressive flows, but have also exposed causal decoding as a major bottleneck. In this work, we introduce Bidirectional Normalizing Flow ($\textbf{BiFlow}$), a framework that removes the need for an exact analytic inverse. BiFlow learns a reverse model that approximates the underlying noise-to-data inverse mapping, enabling more flexible loss functions and architectures. Experiments on ImageNet demonstrate that BiFlow, compared to its causal decoding counterpart, improves generation quality while accelerating sampling by up to two orders of magnitude. BiFlow yields state-of-the-art results among NF-based methods and competitive performance among single-evaluation ("1-NFE") methods. Following recent encouraging progress on NFs, we hope our work will draw further attention to this classical paradigm.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2512.10953v1) 
+- [🔗 arXiv url](https://arxiv.org/abs/2512.10953v1)
+
+---
+
+### 7. Improved Mean Flows: On the Challenges of Fastforward Generative Models
+
+**Authors**: Zhengyang Geng, Yiyang Lu, Zongze Wu, Eli Shechtman, J. Zico Kolter, Kaiming He  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2025-12-01  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+MeanFlow (MF) has recently been established as a framework for one-step generative modeling. However, its ``fastforward'' nature introduces key challenges in both the training objective and the guidance mechanism. First, the original MF's training target depends not only on the underlying ground-truth fields but also on the network itself. To address this issue, we recast the objective as a loss on the instantaneous velocity $v$, re-parameterized by a network that predicts the average velocity $u$. Our reformulation yields a more standard regression problem and improves the training stability. Second, the original MF fixes the classifier-free guidance scale during training, which sacrifices flexibility. We tackle this issue by formulating guidance as explicit conditioning variables, thereby retaining flexibility at test time. The diverse conditions are processed through in-context conditioning, which reduces model size and benefits performance. Overall, our $\textbf{improved MeanFlow}$ ($\textbf{iMF}$) method, trained entirely from scratch, achieves $\textbf{1.72}$ FID with a single function evaluation (1-NFE) on ImageNet 256$\times$256. iMF substantially outperforms prior methods of this kind and closes the gap with multi-step methods while using no distillation. We hope our work will further advance fastforward generative modeling as a stand-alone paradigm.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2512.02012v2) 
+- [🔗 arXiv url](https://arxiv.org/abs/2512.02012v2)
+
+---
+
+### 8. ARC Is a Vision Problem!
+
+**Authors**: Keya Hu, Ali Cy, Linlu Qiu, Xiaoman Delores Ding, Runqian Wang, Yeyin Eva Zhu, Jacob Andreas, Kaiming He  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2025-11-18  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+The Abstraction and Reasoning Corpus (ARC) is designed to promote research on abstract reasoning, a fundamental aspect of human intelligence. Common approaches to ARC treat it as a language-oriented problem, addressed by large language models (LLMs) or recurrent reasoning models. However, although the puzzle-like tasks in ARC are inherently visual, existing research has rarely approached the problem from a vision-centric perspective. In this work, we formulate ARC within a vision paradigm, framing it as an image-to-image translation problem. To incorporate visual priors, we represent the inputs on a "canvas" that can be processed like natural images. It is then natural for us to apply standard vision architectures, such as a vanilla Vision Transformer (ViT), to perform image-to-image mapping. Our model is trained from scratch solely on ARC data and generalizes to unseen tasks through test-time training. Our framework, termed Vision ARC (VARC), achieves 60.4% accuracy on the ARC-1 benchmark, substantially outperforming existing methods that are also trained from scratch. Our results are competitive with those of leading LLMs and close the gap to average human performance.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2511.14761v1) 
+- [🔗 arXiv url](https://arxiv.org/abs/2511.14761v1)
+
+---
+
+### 9. Back to Basics: Let Denoising Generative Models Denoise
+
+**Authors**: Tianhong Li, Kaiming He  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2025-11-17  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+Today's denoising diffusion models do not "denoise" in the classical sense, i.e., they do not directly predict clean images. Rather, the neural networks predict noise or a noised quantity. In this paper, we suggest that predicting clean data and predicting noised quantities are fundamentally different. According to the manifold assumption, natural data should lie on a low-dimensional manifold, whereas noised quantities do not. With this assumption, we advocate for models that directly predict clean data, which allows apparently under-capacity networks to operate effectively in very high-dimensional spaces. We show that simple, large-patch Transformers on pixels can be strong generative models: using no tokenizer, no pre-training, and no extra loss. Our approach is conceptually nothing more than "Just image Transformers", or JiT, as we call it. We report competitive results using JiT with large patch sizes of 16 and 32 on ImageNet at resolutions of 256 and 512, where predicting high-dimensional noised quantities can fail catastrophically. With our networks mapping back to the basics of the manifold, our research goes back to basics and pursues a self-contained paradigm for Transformer-based diffusion on raw natural data.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2511.13720v2) 
+- [🔗 arXiv url](https://arxiv.org/abs/2511.13720v2)
+
+---
+
+### 10. Diffuse and Disperse: Image Generation with Representation Regularization
+
+**Authors**: Runqian Wang, Kaiming He  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2025-06-10  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+The development of diffusion-based generative models over the past decade has largely proceeded independently of progress in representation learning. These diffusion models typically rely on regression-based objectives and generally lack explicit regularization. In this work, we propose \textit{Dispersive Loss}, a simple plug-and-play regularizer that effectively improves diffusion-based generative models. Our loss function encourages internal representations to disperse in the hidden space, analogous to contrastive self-supervised learning, with the key distinction that it requires no positive sample pairs and therefore does not interfere with the sampling process used for regression. Compared to the recent method of representation alignment (REPA), our approach is self-contained and minimalist, requiring no pre-training, no additional parameters, and no external data. We evaluate Dispersive Loss on the ImageNet dataset across a range of models and report consistent improvements over widely used and strong baselines. We hope our work will help bridge the gap between generative modeling and representation learning.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2506.09027v2) 
+- [🔗 arXiv url](https://arxiv.org/abs/2506.09027v2)
+
+---
+
+### 11. Mean Flows for One-step Generative Modeling
+
+**Authors**: Zhengyang Geng, Mingyang Deng, Xingjian Bai, J. Zico Kolter, Kaiming He  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2025-05-19  
+**Primary Category**: cs.LG  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+We propose a principled and effective framework for one-step generative modeling. We introduce the notion of average velocity to characterize flow fields, in contrast to instantaneous velocity modeled by Flow Matching methods. A well-defined identity between average and instantaneous velocities is derived and used to guide neural network training. Our method, termed the MeanFlow model, is self-contained and requires no pre-training, distillation, or curriculum learning. MeanFlow demonstrates strong empirical performance: it achieves an FID of 3.43 with a single function evaluation (1-NFE) on ImageNet 256x256 trained from scratch, significantly outperforming previous state-of-the-art one-step diffusion/flow models. Our study substantially narrows the gap between one-step diffusion/flow models and their multi-step predecessors, and we hope it will motivate future research to revisit the foundations of these powerful models.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2505.13447v1) 
+- [🔗 arXiv url](https://arxiv.org/abs/2505.13447v1)
+
+---
+
+### 12. Transformers without Normalization
+
+**Authors**: Jiachen Zhu, Xinlei Chen, Kaiming He, Yann LeCun, Zhuang Liu  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2025-03-13  
+**Primary Category**: cs.LG  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+Normalization layers are ubiquitous in modern neural networks and have long been considered essential. This work demonstrates that Transformers without normalization can achieve the same or better performance using a remarkably simple technique. We introduce Dynamic Tanh (DyT), an element-wise operation $DyT($x$) = \tanh(α$x$)$, as a drop-in replacement for normalization layers in Transformers. DyT is inspired by the observation that layer normalization in Transformers often produces tanh-like, $S$-shaped input-output mappings. By incorporating DyT, Transformers without normalization can match or exceed the performance of their normalized counterparts, mostly without hyperparameter tuning. We validate the effectiveness of Transformers with DyT across diverse settings, ranging from recognition to generation, supervised to self-supervised learning, and computer vision to language models. These findings challenge the conventional understanding that normalization layers are indispensable in modern neural networks, and offer new insights into their role in deep networks.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2503.10622v2) 
+- [🔗 arXiv url](https://arxiv.org/abs/2503.10622v2)
+
+---
+
+### 13. Denoising Hamiltonian Network for Physical Reasoning
+
+**Authors**: Congyue Deng, Brandon Y. Feng, Cecilia Garraffo, Alan Garbarz, Robin Walters, William T. Freeman, Leonidas Guibas, Kaiming He  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2025-03-10  
+**Primary Category**: cs.LG  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+Machine learning frameworks for physical problems must capture and enforce physical constraints that preserve the structure of dynamical systems. Many existing approaches achieve this by integrating physical operators into neural networks. While these methods offer theoretical guarantees, they face two key limitations: (i) they primarily model local relations between adjacent time steps, overlooking longer-range or higher-level physical interactions, and (ii) they focus on forward simulation while neglecting broader physical reasoning tasks. We propose the Denoising Hamiltonian Network (DHN), a novel framework that generalizes Hamiltonian mechanics operators into more flexible neural operators. DHN captures non-local temporal relationships and mitigates numerical integration errors through a denoising mechanism. DHN also supports multi-system modeling with a global conditioning mechanism. We demonstrate its effectiveness and flexibility across three diverse physical reasoning tasks with distinct inputs and outputs.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2503.07596v1) 
+- [🔗 arXiv url](https://arxiv.org/abs/2503.07596v1)
+
+---
+
+### 14. Fractal Generative Models
+
+**Authors**: Tianhong Li, Qinyi Sun, Lijie Fan, Kaiming He  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2025-02-24  
+**Primary Category**: cs.LG  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+Modularization is a cornerstone of computer science, abstracting complex functions into atomic building blocks. In this paper, we introduce a new level of modularization by abstracting generative models into atomic generative modules. Analogous to fractals in mathematics, our method constructs a new type of generative model by recursively invoking atomic generative modules, resulting in self-similar fractal architectures that we call fractal generative models. As a running example, we instantiate our fractal framework using autoregressive models as the atomic generative modules and examine it on the challenging task of pixel-by-pixel image generation, demonstrating strong performance in both likelihood estimation and generation quality. We hope this work could open a new paradigm in generative modeling and provide a fertile ground for future research. Code is available at https://github.com/LTH14/fractalgen.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2502.17437v2) 
+- [🔗 arXiv url](https://arxiv.org/abs/2502.17437v2)
+
+---
+
+### 15. Is Noise Conditioning Necessary for Denoising Generative Models?
+
+**Authors**: Qiao Sun, Zhicheng Jiang, Hanhong Zhao, Kaiming He  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2025-02-18  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+It is widely believed that noise conditioning is indispensable for denoising diffusion models to work successfully. This work challenges this belief. Motivated by research on blind image denoising, we investigate a variety of denoising-based generative models in the absence of noise conditioning. To our surprise, most models exhibit graceful degradation, and in some cases, they even perform better without noise conditioning. We provide a theoretical analysis of the error caused by removing noise conditioning and demonstrate that our analysis aligns with empirical observations. We further introduce a noise-unconditional model that achieves a competitive FID of 2.23 on CIFAR-10, significantly narrowing the gap to leading noise-conditional models. We hope our findings will inspire the community to revisit the foundations and formulations of denoising generative models.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2502.13129v2) 
+- [🔗 arXiv url](https://arxiv.org/abs/2502.13129v2)
+
+---
+
+### 16. Fluid: Scaling Autoregressive Text-to-image Generative Models with Continuous Tokens
+
+**Authors**: Lijie Fan, Tianhong Li, Siyang Qin, Yuanzhen Li, Chen Sun, Michael Rubinstein, Deqing Sun, Kaiming He, Yonglong Tian  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2024-10-17  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+Scaling up autoregressive models in vision has not proven as beneficial as in large language models. In this work, we investigate this scaling problem in the context of text-to-image generation, focusing on two critical factors: whether models use discrete or continuous tokens, and whether tokens are generated in a random or fixed raster order using BERT- or GPT-like transformer architectures. Our empirical results show that, while all models scale effectively in terms of validation loss, their evaluation performance -- measured by FID, GenEval score, and visual quality -- follows different trends. Models based on continuous tokens achieve significantly better visual quality than those using discrete tokens. Furthermore, the generation order and attention mechanisms significantly affect the GenEval score: random-order models achieve notably better GenEval scores compared to raster-order models. Inspired by these findings, we train Fluid, a random-order autoregressive model on continuous tokens. Fluid 10.5B model achieves a new state-of-the-art zero-shot FID of 6.16 on MS-COCO 30K, and 0.69 overall score on the GenEval benchmark. We hope our findings and results will encourage future efforts to further bridge the scaling gap between vision and language models.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2410.13863v1) 
+- [🔗 arXiv url](https://arxiv.org/abs/2410.13863v1)
+
+---
+
+### 17. Scaling Proprioceptive-Visual Learning with Heterogeneous Pre-trained Transformers
+
+**Authors**: Lirui Wang, Xinlei Chen, Jialiang Zhao, Kaiming He  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2024-09-30  
+**Primary Category**: cs.RO  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+One of the roadblocks for training generalist robotic models today is heterogeneity. Previous robot learning methods often collect data to train with one specific embodiment for one task, which is expensive and prone to overfitting. This work studies the problem of learning policy representations through heterogeneous pre-training on robot data across different embodiments and tasks at scale. We propose Heterogeneous Pre-trained Transformers (HPT), which pre-train a large, shareable trunk of a policy neural network to learn a task and embodiment agnostic shared representation. This general architecture aligns the specific proprioception and vision inputs from distinct embodiments to a short sequence of tokens and then processes such tokens to map to control robots for different tasks. Leveraging the recent large-scale multi-embodiment real-world robotic datasets as well as simulation, deployed robots, and human video datasets, we investigate pre-training policies across heterogeneity. We conduct experiments to investigate the scaling behaviors of training objectives, to the extent of 52 datasets. HPTs outperform several baselines and enhance the fine-tuned policy performance by over 20% on unseen tasks in multiple simulator benchmarks and real-world settings. See the project website (https://liruiw.github.io/hpt/) for code and videos.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2409.20537v1) 
+- [🔗 arXiv url](https://arxiv.org/abs/2409.20537v1)
+
+---
+
+### 18. Autoregressive Image Generation without Vector Quantization
+
+**Authors**: Tianhong Li, Yonglong Tian, He Li, Mingyang Deng, Kaiming He  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2024-06-17  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+Conventional wisdom holds that autoregressive models for image generation are typically accompanied by vector-quantized tokens. We observe that while a discrete-valued space can facilitate representing a categorical distribution, it is not a necessity for autoregressive modeling. In this work, we propose to model the per-token probability distribution using a diffusion procedure, which allows us to apply autoregressive models in a continuous-valued space. Rather than using categorical cross-entropy loss, we define a Diffusion Loss function to model the per-token probability. This approach eliminates the need for discrete-valued tokenizers. We evaluate its effectiveness across a wide range of cases, including standard autoregressive models and generalized masked autoregressive (MAR) variants. By removing vector quantization, our image generator achieves strong results while enjoying the speed advantage of sequence modeling. We hope this work will motivate the use of autoregressive generation in other continuous-valued domains and applications. Code is available at: https://github.com/LTH14/mar.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2406.11838v3) 
+- [🔗 arXiv url](https://arxiv.org/abs/2406.11838v3)
+
+---
+
+### 19. Physically Compatible 3D Object Modeling from a Single Image
+
+**Authors**: Minghao Guo, Bohan Wang, Pingchuan Ma, Tianyuan Zhang, Crystal Elaine Owens, Chuang Gan, Joshua B. Tenenbaum, Kaiming He, Wojciech Matusik  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2024-05-30  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+We present a computational framework that transforms single images into 3D physical objects. The visual geometry of a physical object in an image is determined by three orthogonal attributes: mechanical properties, external forces, and rest-shape geometry. Existing single-view 3D reconstruction methods often overlook this underlying composition, presuming rigidity or neglecting external forces. Consequently, the reconstructed objects fail to withstand real-world physical forces, resulting in instability or undesirable deformation -- diverging from their intended designs as depicted in the image. Our optimization framework addresses this by embedding physical compatibility into the reconstruction process. We explicitly decompose the three physical attributes and link them through static equilibrium, which serves as a hard constraint, ensuring that the optimized physical shapes exhibit desired physical behaviors. Evaluations on a dataset collected from Objaverse demonstrate that our framework consistently enhances the physical realism of 3D models over existing methods. The utility of our framework extends to practical applications in dynamic simulations and 3D printing, where adherence to physical compatibility is paramount.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2405.20510v3) 
+- [🔗 arXiv url](https://arxiv.org/abs/2405.20510v3)
+
+---
+
+### 20. TetSphere Splatting: Representing High-Quality Geometry with Lagrangian Volumetric Meshes
+
+**Authors**: Minghao Guo, Bohan Wang, Kaiming He, Wojciech Matusik  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2024-05-30  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+We introduce TetSphere Splatting, a Lagrangian geometry representation designed for high-quality 3D shape modeling. TetSphere splatting leverages an underused yet powerful geometric primitive -- volumetric tetrahedral meshes. It represents 3D shapes by deforming a collection of tetrahedral spheres, with geometric regularizations and constraints that effectively resolve common mesh issues such as irregular triangles, non-manifoldness, and floating artifacts. Experimental results on multi-view and single-view reconstruction highlight TetSphere splatting's superior mesh quality while maintaining competitive reconstruction accuracy compared to state-of-the-art methods. Additionally, TetSphere splatting demonstrates versatility by seamlessly integrating into generative modeling tasks, such as image-to-3D and text-to-3D generation.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2405.20283v4) 
+- [🔗 arXiv url](https://arxiv.org/abs/2405.20283v4)
+
+---
+
+### 21. Dynamic Inhomogeneous Quantum Resource Scheduling with Reinforcement Learning
+
+**Authors**: Linsen Li, Pratyush Anand, Kaiming He, Dirk Englund  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2024-05-25  
+**Primary Category**: cs.LG  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+A central challenge in quantum information science and technology is achieving real-time estimation and feedforward control of quantum systems. This challenge is compounded by the inherent inhomogeneity of quantum resources, such as qubit properties and controls, and their intrinsically probabilistic nature. This leads to stochastic challenges in error detection and probabilistic outcomes in processes such as heralded remote entanglement. Given these complexities, optimizing the construction of quantum resource states is an NP-hard problem. In this paper, we address the quantum resource scheduling issue by formulating the problem and simulating it within a digitized environment, allowing the exploration and development of agent-based optimization strategies. We employ reinforcement learning agents within this probabilistic setting and introduce a new framework utilizing a Transformer model that emphasizes self-attention mechanisms for pairs of qubits. This approach facilitates dynamic scheduling by providing real-time, next-step guidance. Our method significantly improves the performance of quantum systems, achieving more than a 3$\times$ improvement over rule-based agents, and establishes an innovative framework that improves the joint design of physical and control systems for quantum applications in communication, networking, and computing.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2405.16380v1) 
+- [🔗 arXiv url](https://arxiv.org/abs/2405.16380v1)
+
+---
+
+### 22. A Decade's Battle on Dataset Bias: Are We There Yet?
+
+**Authors**: Zhuang Liu, Kaiming He  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2024-03-13  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+We revisit the "dataset classification" experiment suggested by Torralba & Efros (2011) a decade ago, in the new era with large-scale, diverse, and hopefully less biased datasets as well as more capable neural network architectures. Surprisingly, we observe that modern neural networks can achieve excellent accuracy in classifying which dataset an image is from: e.g., we report 84.7% accuracy on held-out validation data for the three-way classification problem consisting of the YFCC, CC, and DataComp datasets. Our further experiments show that such a dataset classifier could learn semantic features that are generalizable and transferable, which cannot be explained by memorization. We hope our discovery will inspire the community to rethink issues involving dataset bias.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2403.08632v2) 
+- [🔗 arXiv url](https://arxiv.org/abs/2403.08632v2)
+
+---
+
+### 23. Deconstructing Denoising Diffusion Models for Self-Supervised Learning
+
+**Authors**: Xinlei Chen, Zhuang Liu, Saining Xie, Kaiming He  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2024-01-25  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+In this study, we examine the representation learning abilities of Denoising Diffusion Models (DDM) that were originally purposed for image generation. Our philosophy is to deconstruct a DDM, gradually transforming it into a classical Denoising Autoencoder (DAE). This deconstructive procedure allows us to explore how various components of modern DDMs influence self-supervised representation learning. We observe that only a very few modern components are critical for learning good representations, while many others are nonessential. Our study ultimately arrives at an approach that is highly simplified and to a large extent resembles a classical DAE. We hope our study will rekindle interest in a family of classical methods within the realm of modern self-supervised learning.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2401.14404v1) 
+- [🔗 arXiv url](https://arxiv.org/abs/2401.14404v1)
+
+---
+
+### 24. Return of Unconditional Generation: A Self-supervised Representation Generation Method
+
+**Authors**: Tianhong Li, Dina Katabi, Kaiming He  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2023-12-06  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+Unconditional generation -- the problem of modeling data distribution without relying on human-annotated labels -- is a long-standing and fundamental challenge in generative models, creating a potential of learning from large-scale unlabeled data. In the literature, the generation quality of an unconditional method has been much worse than that of its conditional counterpart. This gap can be attributed to the lack of semantic information provided by labels. In this work, we show that one can close this gap by generating semantic representations in the representation space produced by a self-supervised encoder. These representations can be used to condition the image generator. This framework, called Representation-Conditioned Generation (RCG), provides an effective solution to the unconditional generation problem without using labels. Through comprehensive experiments, we observe that RCG significantly improves unconditional generation quality: e.g., it achieves a new state-of-the-art FID of 2.15 on ImageNet 256x256, largely reducing the previous best of 5.91 by a relative 64%. Our unconditional results are situated in the same tier as the leading class-conditional ones. We hope these encouraging observations will attract the community's attention to the fundamental problem of unconditional generation. Code is available at https://github.com/LTH14/rcg.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2312.03701v4) 
+- [🔗 arXiv url](https://arxiv.org/abs/2312.03701v4)
+
+---
+
+### 25. Scaling Language-Image Pre-training via Masking
+
+**Authors**: Yanghao Li, Haoqi Fan, Ronghang Hu, Christoph Feichtenhofer, Kaiming He  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2022-12-01  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+We present Fast Language-Image Pre-training (FLIP), a simple and more efficient method for training CLIP. Our method randomly masks out and removes a large portion of image patches during training. Masking allows us to learn from more image-text pairs given the same wall-clock time and contrast more samples per iteration with similar memory footprint. It leads to a favorable trade-off between accuracy and training time. In our experiments on 400 million image-text pairs, FLIP improves both accuracy and speed over the no-masking baseline. On a large diversity of downstream tasks, FLIP dominantly outperforms the CLIP counterparts trained on the same data. Facilitated by the speedup, we explore the scaling behavior of increasing the model size, data size, or training length, and report encouraging results and comparisons. We hope that our work will foster future research on scaling vision-language learning.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2212.00794v2) 
+- [🔗 arXiv url](https://arxiv.org/abs/2212.00794v2)
+
+---
+
+### 26. Masked Autoencoders As Spatiotemporal Learners
+
+**Authors**: Christoph Feichtenhofer, Haoqi Fan, Yanghao Li, Kaiming He  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2022-05-18  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+This paper studies a conceptually simple extension of Masked Autoencoders (MAE) to spatiotemporal representation learning from videos. We randomly mask out spacetime patches in videos and learn an autoencoder to reconstruct them in pixels. Interestingly, we show that our MAE method can learn strong representations with almost no inductive bias on spacetime (only except for patch and positional embeddings), and spacetime-agnostic random masking performs the best. We observe that the optimal masking ratio is as high as 90% (vs. 75% on images), supporting the hypothesis that this ratio is related to information redundancy of the data. A high masking ratio leads to a large speedup, e.g., > 4x in wall-clock time or even more. We report competitive results on several challenging video datasets using vanilla Vision Transformers. We observe that MAE can outperform supervised pre-training by large margins. We further report encouraging results of training on real-world, uncurated Instagram data. Our study suggests that the general framework of masked autoencoding (BERT, MAE, etc.) can be a unified methodology for representation learning with minimal domain knowledge.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2205.09113v2) 
+- [🔗 arXiv url](https://arxiv.org/abs/2205.09113v2)
+
+---
+
+### 27. Exploring Plain Vision Transformer Backbones for Object Detection
+
+**Authors**: Yanghao Li, Hanzi Mao, Ross Girshick, Kaiming He  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2022-03-30  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+We explore the plain, non-hierarchical Vision Transformer (ViT) as a backbone network for object detection. This design enables the original ViT architecture to be fine-tuned for object detection without needing to redesign a hierarchical backbone for pre-training. With minimal adaptations for fine-tuning, our plain-backbone detector can achieve competitive results. Surprisingly, we observe: (i) it is sufficient to build a simple feature pyramid from a single-scale feature map (without the common FPN design) and (ii) it is sufficient to use window attention (without shifting) aided with very few cross-window propagation blocks. With plain ViT backbones pre-trained as Masked Autoencoders (MAE), our detector, named ViTDet, can compete with the previous leading methods that were all based on hierarchical backbones, reaching up to 61.3 AP_box on the COCO dataset using only ImageNet-1K pre-training. We hope our study will draw attention to research on plain-backbone detectors. Code for ViTDet is available in Detectron2.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2203.16527v2) 
+- [🔗 arXiv url](https://arxiv.org/abs/2203.16527v2)
+
+---
+
+### 28. Benchmarking Detection Transfer Learning with Vision Transformers
+
+**Authors**: Yanghao Li, Saining Xie, Xinlei Chen, Piotr Dollar, Kaiming He, Ross Girshick  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2021-11-22  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+Object detection is a central downstream task used to test if pre-trained network parameters confer benefits, such as improved accuracy or training speed. The complexity of object detection methods can make this benchmarking non-trivial when new architectures, such as Vision Transformer (ViT) models, arrive. These difficulties (e.g., architectural incompatibility, slow training, high memory consumption, unknown training formulae, etc.) have prevented recent studies from benchmarking detection transfer learning with standard ViT models. In this paper, we present training techniques that overcome these challenges, enabling the use of standard ViT models as the backbone of Mask R-CNN. These tools facilitate the primary goal of our study: we compare five ViT initializations, including recent state-of-the-art self-supervised learning methods, supervised initialization, and a strong random initialization baseline. Our results show that recent masking-based unsupervised learning methods may, for the first time, provide convincing transfer learning improvements on COCO, increasing box AP up to 4% (absolute) over supervised and prior self-supervised pre-training methods. Moreover, these masking-based initializations scale better, with the improvement growing as model size increases.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2111.11429v1) 
+- [🔗 arXiv url](https://arxiv.org/abs/2111.11429v1)
+
+---
+
+### 29. Masked Autoencoders Are Scalable Vision Learners
+
+**Authors**: Kaiming He, Xinlei Chen, Saining Xie, Yanghao Li, Piotr Dollár, Ross Girshick  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2021-11-11  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+This paper shows that masked autoencoders (MAE) are scalable self-supervised learners for computer vision. Our MAE approach is simple: we mask random patches of the input image and reconstruct the missing pixels. It is based on two core designs. First, we develop an asymmetric encoder-decoder architecture, with an encoder that operates only on the visible subset of patches (without mask tokens), along with a lightweight decoder that reconstructs the original image from the latent representation and mask tokens. Second, we find that masking a high proportion of the input image, e.g., 75%, yields a nontrivial and meaningful self-supervisory task. Coupling these two designs enables us to train large models efficiently and effectively: we accelerate training (by 3x or more) and improve accuracy. Our scalable approach allows for learning high-capacity models that generalize well: e.g., a vanilla ViT-Huge model achieves the best accuracy (87.8%) among methods that use only ImageNet-1K data. Transfer performance in downstream tasks outperforms supervised pre-training and shows promising scaling behavior.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2111.06377v3) 
+- [🔗 arXiv url](https://arxiv.org/abs/2111.06377v3)
+
+---
+
+### 30. A Large-Scale Study on Unsupervised Spatiotemporal Representation Learning
+
+**Authors**: Christoph Feichtenhofer, Haoqi Fan, Bo Xiong, Ross Girshick, Kaiming He  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2021-04-29  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+We present a large-scale study on unsupervised spatiotemporal representation learning from videos. With a unified perspective on four recent image-based frameworks, we study a simple objective that can easily generalize all these methods to space-time. Our objective encourages temporally-persistent features in the same video, and in spite of its simplicity, it works surprisingly well across: (i) different unsupervised frameworks, (ii) pre-training datasets, (iii) downstream datasets, and (iv) backbone architectures. We draw a series of intriguing observations from this study, e.g., we discover that encouraging long-spanned persistency can be effective even if the timespan is 60 seconds. In addition to state-of-the-art results in multiple benchmarks, we report a few promising cases in which unsupervised pre-training can outperform its supervised counterpart. Code is made available at https://github.com/facebookresearch/SlowFast
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2104.14558v1) 
+- [🔗 arXiv url](https://arxiv.org/abs/2104.14558v1)
+
+---
+
+### 31. An Empirical Study of Training Self-Supervised Vision Transformers
+
+**Authors**: Xinlei Chen, Saining Xie, Kaiming He  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2021-04-05  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+This paper does not describe a novel method. Instead, it studies a straightforward, incremental, yet must-know baseline given the recent progress in computer vision: self-supervised learning for Vision Transformers (ViT). While the training recipes for standard convolutional networks have been highly mature and robust, the recipes for ViT are yet to be built, especially in the self-supervised scenarios where training becomes more challenging. In this work, we go back to basics and investigate the effects of several fundamental components for training self-supervised ViT. We observe that instability is a major issue that degrades accuracy, and it can be hidden by apparently good results. We reveal that these results are indeed partial failure, and they can be improved when training is made more stable. We benchmark ViT results in MoCo v3 and several other self-supervised frameworks, with ablations in various aspects. We discuss the currently positive evidence as well as challenges and open questions. We hope that this work will provide useful data points and experience for future research.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2104.02057v4) 
+- [🔗 arXiv url](https://arxiv.org/abs/2104.02057v4)
+
+---
+
+### 32. Exploring Simple Siamese Representation Learning
+
+**Authors**: Xinlei Chen, Kaiming He  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2020-11-20  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+Siamese networks have become a common structure in various recent models for unsupervised visual representation learning. These models maximize the similarity between two augmentations of one image, subject to certain conditions for avoiding collapsing solutions. In this paper, we report surprising empirical results that simple Siamese networks can learn meaningful representations even using none of the following: (i) negative sample pairs, (ii) large batches, (iii) momentum encoders. Our experiments show that collapsing solutions do exist for the loss and structure, but a stop-gradient operation plays an essential role in preventing collapsing. We provide a hypothesis on the implication of stop-gradient, and further show proof-of-concept experiments verifying it. Our "SimSiam" method achieves competitive results on ImageNet and downstream tasks. We hope this simple baseline will motivate people to rethink the roles of Siamese architectures for unsupervised representation learning. Code will be made available.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2011.10566v1) 
+- [🔗 arXiv url](https://arxiv.org/abs/2011.10566v1)
+
+---
+
+### 33. Graph Structure of Neural Networks
+
+**Authors**: Jiaxuan You, Jure Leskovec, Kaiming He, Saining Xie  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2020-07-13  
+**Primary Category**: cs.LG  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+Neural networks are often represented as graphs of connections between neurons. However, despite their wide use, there is currently little understanding of the relationship between the graph structure of the neural network and its predictive performance. Here we systematically investigate how does the graph structure of neural networks affect their predictive performance. To this end, we develop a novel graph-based representation of neural networks called relational graph, where layers of neural network computation correspond to rounds of message exchange along the graph structure. Using this representation we show that: (1) a "sweet spot" of relational graphs leads to neural networks with significantly improved predictive performance; (2) neural network's performance is approximately a smooth function of the clustering coefficient and average path length of its relational graph; (3) our findings are consistent across many different tasks and datasets; (4) the sweet spot can be identified efficiently; (5) top-performing neural networks have graph structure surprisingly similar to those of real biological neural networks. Our work opens new directions for the design of neural architectures and the understanding on neural networks in general.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2007.06559v2) 
+- [🔗 arXiv url](https://arxiv.org/abs/2007.06559v2)
+
+---
+
+### 34. Designing Network Design Spaces
+
+**Authors**: Ilija Radosavovic, Raj Prateek Kosaraju, Ross Girshick, Kaiming He, Piotr Dollár  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2020-03-30  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+In this work, we present a new network design paradigm. Our goal is to help advance the understanding of network design and discover design principles that generalize across settings. Instead of focusing on designing individual network instances, we design network design spaces that parametrize populations of networks. The overall process is analogous to classic manual design of networks, but elevated to the design space level. Using our methodology we explore the structure aspect of network design and arrive at a low-dimensional design space consisting of simple, regular networks that we call RegNet. The core insight of the RegNet parametrization is surprisingly simple: widths and depths of good networks can be explained by a quantized linear function. We analyze the RegNet design space and arrive at interesting findings that do not match the current practice of network design. The RegNet design space provides simple and fast networks that work well across a wide range of flop regimes. Under comparable training settings and flops, the RegNet models outperform the popular EfficientNet models while being up to 5x faster on GPUs.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2003.13678v1) 
+- [🔗 arXiv url](https://arxiv.org/abs/2003.13678v1)
+
+---
+
+### 35. Are Labels Necessary for Neural Architecture Search?
+
+**Authors**: Chenxi Liu, Piotr Dollár, Kaiming He, Ross Girshick, Alan Yuille, Saining Xie  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2020-03-26  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+Existing neural network architectures in computer vision -- whether designed by humans or by machines -- were typically found using both images and their associated labels. In this paper, we ask the question: can we find high-quality neural architectures using only images, but no human-annotated labels? To answer this question, we first define a new setup called Unsupervised Neural Architecture Search (UnNAS). We then conduct two sets of experiments. In sample-based experiments, we train a large number (500) of diverse architectures with either supervised or unsupervised objectives, and find that the architecture rankings produced with and without labels are highly correlated. In search-based experiments, we run a well-established NAS algorithm (DARTS) using various unsupervised objectives, and report that the architectures searched without labels can be competitive to their counterparts searched with labels. Together, these results reveal the potentially surprising finding that labels are not necessary, and the image statistics alone may be sufficient to identify good neural architectures.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2003.12056v2) 
+- [🔗 arXiv url](https://arxiv.org/abs/2003.12056v2)
+
+---
+
+### 36. Improved Baselines with Momentum Contrastive Learning
+
+**Authors**: Xinlei Chen, Haoqi Fan, Ross Girshick, Kaiming He  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2020-03-09  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+Contrastive unsupervised learning has recently shown encouraging progress, e.g., in Momentum Contrast (MoCo) and SimCLR. In this note, we verify the effectiveness of two of SimCLR's design improvements by implementing them in the MoCo framework. With simple modifications to MoCo---namely, using an MLP projection head and more data augmentation---we establish stronger baselines that outperform SimCLR and do not require large training batches. We hope this will make state-of-the-art unsupervised learning research more accessible. Code will be made public.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/2003.04297v1) 
+- [🔗 arXiv url](https://arxiv.org/abs/2003.04297v1)
+
+---
+
+### 37. PointRend: Image Segmentation as Rendering
+
+**Authors**: Alexander Kirillov, Yuxin Wu, Kaiming He, Ross Girshick  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2019-12-17  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+We present a new method for efficient high-quality image segmentation of objects and scenes. By analogizing classical computer graphics methods for efficient rendering with over- and undersampling challenges faced in pixel labeling tasks, we develop a unique perspective of image segmentation as a rendering problem. From this vantage, we present the PointRend (Point-based Rendering) neural network module: a module that performs point-based segmentation predictions at adaptively selected locations based on an iterative subdivision algorithm. PointRend can be flexibly applied to both instance and semantic segmentation tasks by building on top of existing state-of-the-art models. While many concrete implementations of the general idea are possible, we show that a simple design already achieves excellent results. Qualitatively, PointRend outputs crisp object boundaries in regions that are over-smoothed by previous methods. Quantitatively, PointRend yields significant gains on COCO and Cityscapes, for both instance and semantic segmentation. PointRend's efficiency enables output resolutions that are otherwise impractical in terms of memory or computation compared to existing approaches. Code has been made available at https://github.com/facebookresearch/detectron2/tree/master/projects/PointRend.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/1912.08193v2) 
+- [🔗 arXiv url](https://arxiv.org/abs/1912.08193v2)
+
+---
+
+### 38. A Multigrid Method for Efficiently Training Video Models
+
+**Authors**: Chao-Yuan Wu, Ross Girshick, Kaiming He, Christoph Feichtenhofer, Philipp Krähenbühl  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2019-12-02  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+Training competitive deep video models is an order of magnitude slower than training their counterpart image models. Slow training causes long research cycles, which hinders progress in video understanding research. Following standard practice for training image models, video model training assumes a fixed mini-batch shape: a specific number of clips, frames, and spatial size. However, what is the optimal shape? High resolution models perform well, but train slowly. Low resolution models train faster, but they are inaccurate. Inspired by multigrid methods in numerical optimization, we propose to use variable mini-batch shapes with different spatial-temporal resolutions that are varied according to a schedule. The different shapes arise from resampling the training data on multiple sampling grids. Training is accelerated by scaling up the mini-batch size and learning rate when shrinking the other dimensions. We empirically demonstrate a general and robust grid schedule that yields a significant out-of-the-box training speedup without a loss in accuracy for different models (I3D, non-local, SlowFast), datasets (Kinetics, Something-Something, Charades), and training settings (with and without pre-training, 128 GPUs or 1 GPU). As an illustrative example, the proposed multigrid method trains a ResNet-50 SlowFast network 4.5x faster (wall-clock time, same hardware) while also improving accuracy (+0.8% absolute) on Kinetics-400 compared to the baseline training method. Code is available online.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/1912.00998v2) 
+- [🔗 arXiv url](https://arxiv.org/abs/1912.00998v2)
+
+---
+
+### 39. Momentum Contrast for Unsupervised Visual Representation Learning
+
+**Authors**: Kaiming He, Haoqi Fan, Yuxin Wu, Saining Xie, Ross Girshick  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2019-11-13  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+We present Momentum Contrast (MoCo) for unsupervised visual representation learning. From a perspective on contrastive learning as dictionary look-up, we build a dynamic dictionary with a queue and a moving-averaged encoder. This enables building a large and consistent dictionary on-the-fly that facilitates contrastive unsupervised learning. MoCo provides competitive results under the common linear protocol on ImageNet classification. More importantly, the representations learned by MoCo transfer well to downstream tasks. MoCo can outperform its supervised pre-training counterpart in 7 detection/segmentation tasks on PASCAL VOC, COCO, and other datasets, sometimes surpassing it by large margins. This suggests that the gap between unsupervised and supervised representation learning has been largely closed in many vision tasks.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/1911.05722v3) 
+- [🔗 arXiv url](https://arxiv.org/abs/1911.05722v3)
+
+---
+
+### 40. Deep Hough Voting for 3D Object Detection in Point Clouds
+
+**Authors**: Charles R. Qi, Or Litany, Kaiming He, Leonidas J. Guibas  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2019-04-21  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+Current 3D object detection methods are heavily influenced by 2D detectors. In order to leverage architectures in 2D detectors, they often convert 3D point clouds to regular grids (i.e., to voxel grids or to bird's eye view images), or rely on detection in 2D images to propose 3D boxes. Few works have attempted to directly detect objects in point clouds. In this work, we return to first principles to construct a 3D detection pipeline for point cloud data and as generic as possible. However, due to the sparse nature of the data -- samples from 2D manifolds in 3D space -- we face a major challenge when directly predicting bounding box parameters from scene points: a 3D object centroid can be far from any surface point thus hard to regress accurately in one step. To address the challenge, we propose VoteNet, an end-to-end 3D object detection network based on a synergy of deep point set networks and Hough voting. Our model achieves state-of-the-art 3D detection on two large datasets of real 3D scans, ScanNet and SUN RGB-D with a simple design, compact model size and high efficiency. Remarkably, VoteNet outperforms previous methods by using purely geometric information without relying on color images.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/1904.09664v2) 
+- [🔗 arXiv url](https://arxiv.org/abs/1904.09664v2)
+
+---
+
+### 41. Exploring Randomly Wired Neural Networks for Image Recognition
+
+**Authors**: Saining Xie, Alexander Kirillov, Ross Girshick, Kaiming He  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2019-04-02  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+Neural networks for image recognition have evolved through extensive manual design from simple chain-like models to structures with multiple wiring paths. The success of ResNets and DenseNets is due in large part to their innovative wiring plans. Now, neural architecture search (NAS) studies are exploring the joint optimization of wiring and operation types, however, the space of possible wirings is constrained and still driven by manual design despite being searched. In this paper, we explore a more diverse set of connectivity patterns through the lens of randomly wired neural networks. To do this, we first define the concept of a stochastic network generator that encapsulates the entire network generation process. Encapsulation provides a unified view of NAS and randomly wired networks. Then, we use three classical random graph models to generate randomly wired graphs for networks. The results are surprising: several variants of these random generators yield network instances that have competitive accuracy on the ImageNet benchmark. These results suggest that new efforts focusing on designing better network generators may lead to new breakthroughs by exploring less constrained search spaces with more room for novel design.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/1904.01569v2) 
+- [🔗 arXiv url](https://arxiv.org/abs/1904.01569v2)
+
+---
+
+### 42. TensorMask: A Foundation for Dense Object Segmentation
+
+**Authors**: Xinlei Chen, Ross Girshick, Kaiming He, Piotr Dollár  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2019-03-28  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+Sliding-window object detectors that generate bounding-box object predictions over a dense, regular grid have advanced rapidly and proven popular. In contrast, modern instance segmentation approaches are dominated by methods that first detect object bounding boxes, and then crop and segment these regions, as popularized by Mask R-CNN. In this work, we investigate the paradigm of dense sliding-window instance segmentation, which is surprisingly under-explored. Our core observation is that this task is fundamentally different than other dense prediction tasks such as semantic segmentation or bounding-box object detection, as the output at every spatial location is itself a geometric structure with its own spatial dimensions. To formalize this, we treat dense instance segmentation as a prediction task over 4D tensors and present a general framework called TensorMask that explicitly captures this geometry and enables novel operators on 4D tensors. We demonstrate that the tensor view leads to large gains over baselines that ignore this structure, and leads to results comparable to Mask R-CNN. These promising results suggest that TensorMask can serve as a foundation for novel advances in dense mask prediction and a more complete understanding of the task. Code will be made available.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/1903.12174v2) 
+- [🔗 arXiv url](https://arxiv.org/abs/1903.12174v2)
+
+---
+
+### 43. Panoptic Feature Pyramid Networks
+
+**Authors**: Alexander Kirillov, Ross Girshick, Kaiming He, Piotr Dollár  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2019-01-08  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+The recently introduced panoptic segmentation task has renewed our community's interest in unifying the tasks of instance segmentation (for thing classes) and semantic segmentation (for stuff classes). However, current state-of-the-art methods for this joint task use separate and dissimilar networks for instance and semantic segmentation, without performing any shared computation. In this work, we aim to unify these methods at the architectural level, designing a single network for both tasks. Our approach is to endow Mask R-CNN, a popular instance segmentation method, with a semantic segmentation branch using a shared Feature Pyramid Network (FPN) backbone. Surprisingly, this simple baseline not only remains effective for instance segmentation, but also yields a lightweight, top-performing method for semantic segmentation. In this work, we perform a detailed study of this minimally extended version of Mask R-CNN with FPN, which we refer to as Panoptic FPN, and show it is a robust and accurate baseline for both tasks. Given its effectiveness and conceptual simplicity, we hope our method can serve as a strong baseline and aid future research in panoptic segmentation.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/1901.02446v2) 
+- [🔗 arXiv url](https://arxiv.org/abs/1901.02446v2)
+
+---
+
+### 44. Long-Term Feature Banks for Detailed Video Understanding
+
+**Authors**: Chao-Yuan Wu, Christoph Feichtenhofer, Haoqi Fan, Kaiming He, Philipp Krähenbühl, Ross Girshick  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2018-12-12  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+To understand the world, we humans constantly need to relate the present to the past, and put events in context. In this paper, we enable existing video models to do the same. We propose a long-term feature bank---supportive information extracted over the entire span of a video---to augment state-of-the-art video models that otherwise would only view short clips of 2-5 seconds. Our experiments demonstrate that augmenting 3D convolutional networks with a long-term feature bank yields state-of-the-art results on three challenging video datasets: AVA, EPIC-Kitchens, and Charades.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/1812.05038v2) 
+- [🔗 arXiv url](https://arxiv.org/abs/1812.05038v2)
+
+---
+
+### 45. SlowFast Networks for Video Recognition
+
+**Authors**: Christoph Feichtenhofer, Haoqi Fan, Jitendra Malik, Kaiming He  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2018-12-10  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+We present SlowFast networks for video recognition. Our model involves (i) a Slow pathway, operating at low frame rate, to capture spatial semantics, and (ii) a Fast pathway, operating at high frame rate, to capture motion at fine temporal resolution. The Fast pathway can be made very lightweight by reducing its channel capacity, yet can learn useful temporal information for video recognition. Our models achieve strong performance for both action classification and detection in video, and large improvements are pin-pointed as contributions by our SlowFast concept. We report state-of-the-art accuracy on major video recognition benchmarks, Kinetics, Charades and AVA. Code has been made available at: https://github.com/facebookresearch/SlowFast
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/1812.03982v3) 
+- [🔗 arXiv url](https://arxiv.org/abs/1812.03982v3)
+
+---
+
+### 46. Feature Denoising for Improving Adversarial Robustness
+
+**Authors**: Cihang Xie, Yuxin Wu, Laurens van der Maaten, Alan Yuille, Kaiming He  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2018-12-09  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+Adversarial attacks to image classification systems present challenges to convolutional networks and opportunities for understanding them. This study suggests that adversarial perturbations on images lead to noise in the features constructed by these networks. Motivated by this observation, we develop new network architectures that increase adversarial robustness by performing feature denoising. Specifically, our networks contain blocks that denoise the features using non-local means or other filters; the entire networks are trained end-to-end. When combined with adversarial training, our feature denoising networks substantially improve the state-of-the-art in adversarial robustness in both white-box and black-box attack settings. On ImageNet, under 10-iteration PGD white-box attacks where prior art has 27.9% accuracy, our method achieves 55.7%; even under extreme 2000-iteration PGD white-box attacks, our method secures 42.6% accuracy. Our method was ranked first in Competition on Adversarial Attacks and Defenses (CAAD) 2018 --- it achieved 50.6% classification accuracy on a secret, ImageNet-like test dataset against 48 unknown attackers, surpassing the runner-up approach by ~10%. Code is available at https://github.com/facebookresearch/ImageNet-Adversarial-Training.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/1812.03411v2) 
+- [🔗 arXiv url](https://arxiv.org/abs/1812.03411v2)
+
+---
+
+### 47. Rethinking ImageNet Pre-training
+
+**Authors**: Kaiming He, Ross Girshick, Piotr Dollár  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2018-11-21  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+We report competitive results on object detection and instance segmentation on the COCO dataset using standard models trained from random initialization. The results are no worse than their ImageNet pre-training counterparts even when using the hyper-parameters of the baseline system (Mask R-CNN) that were optimized for fine-tuning pre-trained models, with the sole exception of increasing the number of training iterations so the randomly initialized models may converge. Training from random initialization is surprisingly robust; our results hold even when: (i) using only 10% of the training data, (ii) for deeper and wider models, and (iii) for multiple tasks and metrics. Experiments show that ImageNet pre-training speeds up convergence early in training, but does not necessarily provide regularization or improve final target task accuracy. To push the envelope we demonstrate 50.9 AP on COCO object detection without using any external data---a result on par with the top COCO 2017 competition results that used ImageNet pre-training. These observations challenge the conventional wisdom of ImageNet pre-training for dependent tasks and we expect these discoveries will encourage people to rethink the current de facto paradigm of `pre-training and fine-tuning' in computer vision.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/1811.08883v1) 
+- [🔗 arXiv url](https://arxiv.org/abs/1811.08883v1)
+
+---
+
+### 48. GLoMo: Unsupervisedly Learned Relational Graphs as Transferable Representations
+
+**Authors**: Zhilin Yang, Jake Zhao, Bhuwan Dhingra, Kaiming He, William W. Cohen, Ruslan Salakhutdinov, Yann LeCun  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2018-06-14  
+**Primary Category**: cs.LG  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+Modern deep transfer learning approaches have mainly focused on learning generic feature vectors from one task that are transferable to other tasks, such as word embeddings in language and pretrained convolutional features in vision. However, these approaches usually transfer unary features and largely ignore more structured graphical representations. This work explores the possibility of learning generic latent relational graphs that capture dependencies between pairs of data units (e.g., words or pixels) from large-scale unlabeled data and transferring the graphs to downstream tasks. Our proposed transfer learning framework improves performance on various tasks including question answering, natural language inference, sentiment analysis, and image classification. We also show that the learned graphs are generic enough to be transferred to different embeddings on which the graphs have not been trained (including GloVe embeddings, ELMo embeddings, and task-specific RNN hidden unit), or embedding-free units such as image pixels.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/1806.05662v3) 
+- [🔗 arXiv url](https://arxiv.org/abs/1806.05662v3)
+
+---
+
+### 49. Exploring the Limits of Weakly Supervised Pretraining
+
+**Authors**: Dhruv Mahajan, Ross Girshick, Vignesh Ramanathan, Kaiming He, Manohar Paluri, Yixuan Li, Ashwin Bharambe, Laurens van der Maaten  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2018-05-02  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+State-of-the-art visual perception models for a wide range of tasks rely on supervised pretraining. ImageNet classification is the de facto pretraining task for these models. Yet, ImageNet is now nearly ten years old and is by modern standards "small". Even so, relatively little is known about the behavior of pretraining with datasets that are multiple orders of magnitude larger. The reasons are obvious: such datasets are difficult to collect and annotate. In this paper, we present a unique study of transfer learning with large convolutional networks trained to predict hashtags on billions of social media images. Our experiments demonstrate that training for large-scale hashtag prediction leads to excellent results. We show improvements on several image classification and object detection tasks, and report the highest ImageNet-1k single-crop, top-1 accuracy to date: 85.4% (97.6% top-5). We also perform extensive experiments that provide novel empirical data on the relationship between large-scale pretraining and transfer learning performance.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/1805.00932v1) 
+- [🔗 arXiv url](https://arxiv.org/abs/1805.00932v1)
+
+---
+
+### 50. Group Normalization
+
+**Authors**: Yuxin Wu, Kaiming He  
+**Affiliation**: MIT CSAIL  
+**Published Date**: 2018-03-22  
+**Primary Category**: cs.CV  
+
+<details>
+<summary>📄 Abstract (click to expand)</summary>
+
+Batch Normalization (BN) is a milestone technique in the development of deep learning, enabling various networks to train. However, normalizing along the batch dimension introduces problems --- BN's error increases rapidly when the batch size becomes smaller, caused by inaccurate batch statistics estimation. This limits BN's usage for training larger models and transferring features to computer vision tasks including detection, segmentation, and video, which require small batches constrained by memory consumption. In this paper, we present Group Normalization (GN) as a simple alternative to BN. GN divides the channels into groups and computes within each group the mean and variance for normalization. GN's computation is independent of batch sizes, and its accuracy is stable in a wide range of batch sizes. On ResNet-50 trained in ImageNet, GN has 10.6% lower error than its BN counterpart when using a batch size of 2; when using typical batch sizes, GN is comparably good with BN and outperforms other normalization variants. Moreover, GN can be naturally transferred from pre-training to fine-tuning. GN can outperform its BN-based counterparts for object detection and segmentation in COCO, and for video classification in Kinetics, showing that GN can effectively replace the powerful BN in a variety of tasks. GN can be easily implemented by a few lines of code in modern libraries.
+
+</details>
+
+**Resource**: 
+- [📄 PDF url](https://arxiv.org/pdf/1803.08494v3) 
+- [🔗 arXiv url](https://arxiv.org/abs/1803.08494v3)
+
+---
 
 ## 📄 Licence
 The paper is copyrighted by the original authors, and this project is for academic research purposes only.
