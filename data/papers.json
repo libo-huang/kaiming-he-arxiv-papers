@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-06-28T06:05:06.088445",
+  "last_updated": "2026-06-29T06:25:49.713149",
   "papers": [
     {
-      "id": "2605.10938v1",
+      "id": "2605.10938v2",
       "title": "ELF: Embedded Language Flows",
       "authors": [
         "Keya Hu",
@@ -16,11 +16,11 @@
       ],
       "summary": "Diffusion and flow-based models have become the de facto approaches for generating continuous data, e.g., in domains such as images and videos. Their success has attracted growing interest in applying them to language modeling. Unlike their image-domain counterparts, today's leading diffusion language models (DLMs) primarily operate over discrete tokens. In this paper, we show that continuous DLMs can be made effective with minimal adaptation to the discrete domain. We propose Embedded Language Flows (ELF), a class of diffusion models in continuous embedding space based on continuous-time Flow Matching. Unlike existing DLMs, ELF predominantly stays within the continuous embedding space until the final time step, where it maps to discrete tokens using a shared-weight network. This formulation makes it straightforward to adapt established techniques from image-domain diffusion models, e.g., classifier-free guidance (CFG). Experiments show that ELF substantially outperforms leading discrete and continuous DLMs, achieving better generation quality with fewer sampling steps. These results suggest that ELF offers a promising path toward effective continuous DLMs.",
       "published": "2026-05-11",
-      "updated": "2026-05-11",
-      "pdf_url": "https://arxiv.org/pdf/2605.10938v1",
+      "updated": "2026-06-26",
+      "pdf_url": "https://arxiv.org/pdf/2605.10938v2",
       "primary_category": "cs.CL",
       "affiliation": "MIT CSAIL",
-      "arxiv_url": "https://arxiv.org/abs/2605.10938v1"
+      "arxiv_url": "https://arxiv.org/abs/2605.10938v2"
     },
     {
       "id": "2604.20329v3",

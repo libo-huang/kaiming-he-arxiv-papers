@@ -1,6 +1,6 @@
 # Kaiming He newest airxiv papers
 
-> Page last update: 2026-06-28 06:05:06 
+> Page last update: 2026-06-29 06:25:49 
 > 
 > The project automatically fetches the latest papers from the arXiv of [Kaiming He](https://people.csail.mit.edu/kaiming/).
 >
@@ -28,8 +28,8 @@ Diffusion and flow-based models have become the de facto approaches for generati
 </details>
 
 **Resource**: 
-- [📄 PDF url](https://arxiv.org/pdf/2605.10938v1) 
-- [🔗 arXiv url](https://arxiv.org/abs/2605.10938v1)
+- [📄 PDF url](https://arxiv.org/pdf/2605.10938v2) 
+- [🔗 arXiv url](https://arxiv.org/abs/2605.10938v2)
 
 ---
 
