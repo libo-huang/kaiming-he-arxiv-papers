@@ -1,6 +1,31 @@
 {
-  "last_updated": "2026-07-12T05:13:11.715899",
+  "last_updated": "2026-07-13T05:22:00.405920",
   "papers": [
+    {
+      "id": "2607.09024v1",
+      "title": "Video Generation Models are General-Purpose Vision Learners",
+      "authors": [
+        "Letian Wang",
+        "Chuhan Zhang",
+        "Rishabh Kabra",
+        "Jasper Uijlings",
+        "Steven Waslander",
+        "Andrew Zisserman",
+        "Joao Carreira",
+        "Kaiming He",
+        "Misha Andriluka",
+        "Eduard Gabriel Bazavan",
+        "Andrei Zanfir",
+        "Cristian Sminchisescu"
+      ],
+      "summary": "Driven by next-token prediction, NLP shifted from task-specific models into powerful generalist foundation models. What, then, is the equivalent catalyst needed to achieve a general-purpose model in computer vision? In this paper, we contend that large-scale text-to-video generation serves as a strong pre-training paradigm for computer vision, providing the necessary spatiotemporal priors, vision-language alignment, and scalability required for general visual intelligence. We introduce GenCeption, which leverages a pre-trained video generative diffusion backbone to define a feed-forward perception model, capable of performing various vision tasks steered by text instructions. Empirical results demonstrate that GenCeption achieves state-of-the-art performance across a diverse suite of tasks, including depth, surface normal, and camera pose estimation, expression-referring segmentation, and 3D keypoint prediction, often matching or surpassing specialized models (e.g. DepthAnything3, SAM3, D4RT, VGGT-Omega, Sapiens, David, Genmo, and Lotus-2). Furthermore, the video generative pretrained backbone outperforms alternative pretraining paradigms (e.g., V-JEPA, and Video MAE) under comparable settings. Importantly, GenCeption exhibits preliminary data and model scaling properties along with exceptional data efficiency, where it achieves comparable performance with leading models like D4RT and VGGT-Omega with 7 to 500 less training data. Finally, GenCeption also exhibits intriguing emergent behaviors: a model trained exclusively on synthetic human videos generalizes to real-world footage and out-of-distribution object categories (e.g., animals and robots). These findings suggest that video generation is not merely a synthesis tool, but a foundational path toward generalist vision intelligence for the physical world. Project page: https://genception.github.io",
+      "published": "2026-07-10",
+      "updated": "2026-07-10",
+      "pdf_url": "https://arxiv.org/pdf/2607.09024v1",
+      "primary_category": "cs.CV",
+      "affiliation": "MIT CSAIL",
+      "arxiv_url": "https://arxiv.org/abs/2607.09024v1"
+    },
     {
       "id": "2605.10938v2",
       "title": "ELF: Embedded Language Flows",
@@ -902,21 +927,6 @@
       "primary_category": "cs.CV",
       "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/1805.00932v1"
-    },
-    {
-      "id": "1803.08494v3",
-      "title": "Group Normalization",
-      "authors": [
-        "Yuxin Wu",
-        "Kaiming He"
-      ],
-      "summary": "Batch Normalization (BN) is a milestone technique in the development of deep learning, enabling various networks to train. However, normalizing along the batch dimension introduces problems --- BN's error increases rapidly when the batch size becomes smaller, caused by inaccurate batch statistics estimation. This limits BN's usage for training larger models and transferring features to computer vision tasks including detection, segmentation, and video, which require small batches constrained by memory consumption. In this paper, we present Group Normalization (GN) as a simple alternative to BN. GN divides the channels into groups and computes within each group the mean and variance for normalization. GN's computation is independent of batch sizes, and its accuracy is stable in a wide range of batch sizes. On ResNet-50 trained in ImageNet, GN has 10.6% lower error than its BN counterpart when using a batch size of 2; when using typical batch sizes, GN is comparably good with BN and outperforms other normalization variants. Moreover, GN can be naturally transferred from pre-training to fine-tuning. GN can outperform its BN-based counterparts for object detection and segmentation in COCO, and for video classification in Kinetics, showing that GN can effectively replace the powerful BN in a variety of tasks. GN can be easily implemented by a few lines of code in modern libraries.",
-      "published": "2018-03-22",
-      "updated": "2018-06-11",
-      "pdf_url": "https://arxiv.org/pdf/1803.08494v3",
-      "primary_category": "cs.CV",
-      "affiliation": "MIT CSAIL",
-      "arxiv_url": "https://arxiv.org/abs/1803.08494v3"
     }
   ]
 }
