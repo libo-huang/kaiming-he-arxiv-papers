@@ -1,6 +1,6 @@
 # Kaiming He newest airxiv papers
 
-> Page last update: 2026-07-27 05:36:05 
+> Page last update: 2026-07-28 04:50:57 
 > 
 > The project automatically fetches the latest papers from the arXiv of [Kaiming He](https://people.csail.mit.edu/kaiming/).
 >
