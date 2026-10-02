@@ -1,6 +1,24 @@
 {
-  "last_updated": "2026-10-01T07:54:46.619535",
+  "last_updated": "2026-10-02T07:38:44.212236",
   "papers": [
+    {
+      "id": "2610.02200v1",
+      "title": "VISTA: A Visual Harness for Reasoning in an Interactive World",
+      "authors": [
+        "Qiushi Han",
+        "Keya Hu",
+        "Linlu Qiu",
+        "Cathy Wu",
+        "Kaiming He"
+      ],
+      "summary": "We show that multimodal models possess strong reasoning abilities and that an appropriate harness can unlock their potential to solve tasks across diverse interactive environments. We introduce VISTA, a visual harness that gives a general-purpose multimodal model long-horizon vision. VISTA allows the model to directly perceive the environment through visual observations and maintains a lossless visual memory that preserves past observations in their original form. The model can actively retrieve these observations and reorganize its visual input as it reasons. On ARC-AGI-3, VISTA improves Claude Opus 5.0's Relative Human Action Efficiency score from 40.68 to a perfect 100.00, with the model completing all 25 public games using 57.4% fewer actions than first-time human participants. VISTA's simple design also allows it to extend naturally to diverse visual environments with minimal adaptation. Across three additional benchmarks covering a diverse range of visual games and puzzles, it substantially outperforms baselines using the same underlying model with minimal harnesses. Our results highlight VISTA's potential as a general-purpose visual harness for advancing multimodal agents in complex visual environments.",
+      "published": "2026-10-01",
+      "updated": "2026-10-01",
+      "pdf_url": "https://arxiv.org/pdf/2610.02200v1",
+      "primary_category": "cs.AI",
+      "affiliation": "MIT CSAIL",
+      "arxiv_url": "https://arxiv.org/abs/2610.02200v1"
+    },
     {
       "id": "2607.09024v1",
       "title": "Video Generation Models are General-Purpose Vision Learners",
@@ -906,27 +924,6 @@
       "primary_category": "cs.LG",
       "affiliation": "MIT CSAIL",
       "arxiv_url": "https://arxiv.org/abs/1806.05662v3"
-    },
-    {
-      "id": "1805.00932v1",
-      "title": "Exploring the Limits of Weakly Supervised Pretraining",
-      "authors": [
-        "Dhruv Mahajan",
-        "Ross Girshick",
-        "Vignesh Ramanathan",
-        "Kaiming He",
-        "Manohar Paluri",
-        "Yixuan Li",
-        "Ashwin Bharambe",
-        "Laurens van der Maaten"
-      ],
-      "summary": "State-of-the-art visual perception models for a wide range of tasks rely on supervised pretraining. ImageNet classification is the de facto pretraining task for these models. Yet, ImageNet is now nearly ten years old and is by modern standards \"small\". Even so, relatively little is known about the behavior of pretraining with datasets that are multiple orders of magnitude larger. The reasons are obvious: such datasets are difficult to collect and annotate. In this paper, we present a unique study of transfer learning with large convolutional networks trained to predict hashtags on billions of social media images. Our experiments demonstrate that training for large-scale hashtag prediction leads to excellent results. We show improvements on several image classification and object detection tasks, and report the highest ImageNet-1k single-crop, top-1 accuracy to date: 85.4% (97.6% top-5). We also perform extensive experiments that provide novel empirical data on the relationship between large-scale pretraining and transfer learning performance.",
-      "published": "2018-05-02",
-      "updated": "2018-05-02",
-      "pdf_url": "https://arxiv.org/pdf/1805.00932v1",
-      "primary_category": "cs.CV",
-      "affiliation": "MIT CSAIL",
-      "arxiv_url": "https://arxiv.org/abs/1805.00932v1"
     }
   ]
 }
